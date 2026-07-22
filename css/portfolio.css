@@ -1,0 +1,332 @@
+/* ── Portfolio Section ─────────────────────────────────────────────────── */
+.portfolio-section {
+  background: #e8f0fe;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+/* ── Dots + Rings decorations ── */
+
+/* Background dot grid */
+.portfolio-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(26,110,245,0.18) 1px, transparent 1px);
+  background-size: 36px 36px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Soft blur blobs */
+.pf-blob {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(70px);
+  animation: pfBlobDrift 10s ease-in-out infinite;
+}
+.pf-blob-1 { width: 340px; height: 340px; top: -80px;  left: -80px;  background: rgba(26,110,245,0.1);  animation-delay: 0s; }
+.pf-blob-2 { width: 260px; height: 260px; bottom: -60px; right: -60px; background: rgba(109,40,217,0.08); animation-delay: -4s; }
+.pf-blob-3 { width: 200px; height: 200px; top: 40%;    left: 45%;    background: rgba(96,165,250,0.07); animation-delay: -7s; }
+
+@keyframes pfBlobDrift {
+  0%, 100% { transform: translate(0, 0); }
+  50%       { transform: translate(20px, -20px); }
+}
+
+/* Thin floating plus signs */
+.pf-plus {
+  position: absolute;
+  pointer-events: none;
+  color: rgba(26,110,245,0.2);
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1;
+  animation: pfPlusFloat 7s ease-in-out infinite;
+  user-select: none;
+}
+.pf-plus-1 { top: 12%;  left: 8%;   animation-delay: 0s;   font-size: 1.2rem; }
+.pf-plus-2 { top: 25%;  right: 7%;  animation-delay: -2s;  font-size: 1.6rem; color: rgba(109,40,217,0.18); }
+.pf-plus-3 { bottom: 18%; left: 6%;  animation-delay: -4s;  font-size: 1rem; }
+.pf-plus-4 { bottom: 25%; right: 10%;animation-delay: -1s;  font-size: 1.4rem; color: rgba(109,40,217,0.15); }
+.pf-plus-5 { top: 55%;  left: 50%;  animation-delay: -3s;  font-size: 1rem;   color: rgba(26,110,245,0.15); }
+
+@keyframes pfPlusFloat {
+  0%, 100% { transform: translateY(0)    rotate(0deg);   opacity: 0.7; }
+  50%       { transform: translateY(-14px) rotate(15deg); opacity: 1; }
+}
+
+/* Card: remove old ::after dot */
+.pf-card::after { display: none; }
+.pf-diamond {
+  position: absolute;
+  transform: rotate(45deg);
+  pointer-events: none;
+  border-radius: 4px;
+  animation: pfDiamondFloat 6s ease-in-out infinite;
+}
+.pf-diamond-1 {
+  width: 60px; height: 60px;
+  top: 8%; left: 4%;
+  border: 2px solid rgba(109,40,217,0.2);
+  background: rgba(109,40,217,0.04);
+  animation-delay: 0s;
+}
+.pf-diamond-2 {
+  width: 36px; height: 36px;
+  top: 18%; right: 6%;
+  border: 2px solid rgba(26,110,245,0.25);
+  background: rgba(26,110,245,0.05);
+  animation-delay: -2s;
+}
+.pf-diamond-3 {
+  width: 80px; height: 80px;
+  bottom: 12%; left: 2%;
+  border: 2px solid rgba(109,40,217,0.12);
+  background: rgba(109,40,217,0.03);
+  animation-delay: -4s;
+}
+.pf-diamond-4 {
+  width: 24px; height: 24px;
+  top: 50%; right: 3%;
+  border: 2px solid rgba(26,110,245,0.3);
+  background: rgba(26,110,245,0.06);
+  animation-delay: -1s;
+}
+.pf-diamond-5 {
+  width: 48px; height: 48px;
+  bottom: 20%; right: 8%;
+  border: 2px solid rgba(109,40,217,0.18);
+  background: rgba(109,40,217,0.04);
+  animation-delay: -3s;
+}
+@keyframes pfDiamondFloat {
+  0%, 100% { transform: rotate(45deg) translateY(0);   opacity: 0.7; }
+  50%       { transform: rotate(45deg) translateY(-12px); opacity: 1; }
+}
+
+/* ── Card corner diamond watermark ── */
+.pf-card::after {
+  content: '';
+  position: absolute;
+  bottom: 16px; right: 16px;
+  width: 28px; height: 28px;
+  border: 2px solid rgba(109,40,217,0.12);
+  border-radius: 3px;
+  transform: rotate(45deg);
+  transition: border-color 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+.pf-card:hover::after {
+  border-color: rgba(109,40,217,0.35);
+  transform: rotate(45deg) scale(1.2);
+}
+
+/* ── Bento Grid ── */
+.pf-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* First card spans 2 cols */
+.pf-card:nth-child(1) { grid-column: span 2; }
+/* 5th card spans 2 cols */
+.pf-card:nth-child(5) { grid-column: span 2; }
+
+/* ── Card base ── */
+.pf-card {
+  background: #ffffff;
+  border: 1px solid rgba(26,110,245,0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 24px rgba(26,110,245,0.07);
+}
+.pf-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(109,40,217,0.3);
+  box-shadow: 0 20px 56px rgba(109,40,217,0.14);
+}
+
+/* Top shimmer line */
+.pf-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #6D28D9, #1a6ef5, transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 3;
+}
+.pf-card.visible::before,
+.pf-card:hover::before { opacity: 1; }
+
+/* ── Image wrap ── */
+.pf-img-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+.pf-card:nth-child(1) .pf-img-wrap,
+.pf-card:nth-child(5) .pf-img-wrap { height: 260px; }
+
+.pf-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  filter: brightness(0.85);
+}
+.pf-card:hover .pf-img {
+  transform: scale(1.07);
+  filter: brightness(1);
+}
+
+/* Image overlay */
+.pf-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 20%, rgba(6,15,46,0.92) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 2;
+}
+
+.pf-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #6D28D9, #1a6ef5);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 9px 18px;
+  border-radius: 50px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(109,40,217,0.4);
+}
+.pf-card:hover .pf-view-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Number badge on image */
+.pf-num {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(0,0,0,0.06);
+  line-height: 1;
+  user-select: none;
+}
+
+/* ── Card body ── */
+.pf-body {
+  padding: 24px 26px 26px;
+}
+
+.pf-cat {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.pf-body h3 {
+  color: var(--navy);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+.pf-card:nth-child(1) .pf-body h3,
+.pf-card:nth-child(5) .pf-body h3 { font-size: 1.2rem; }
+
+.pf-body p {
+  color: var(--text-light);
+  font-size: 0.87rem;
+  line-height: 1.72;
+  margin-bottom: 18px;
+}
+
+.pf-divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 16px;
+}
+
+/* Tech tags */
+.tech-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tech-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 11px;
+  border-radius: 20px;
+  background: rgba(109,40,217,0.08);
+  color: #6D28D9;
+  border: 1px solid rgba(109,40,217,0.18);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.pf-card:hover .tech-tag {
+  background: rgba(109,40,217,0.15);
+  color: #5b21b6;
+}
+
+/* ── Bottom CTA ── */
+.pf-cta {
+  margin-top: 56px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.pf-cta p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+}
+.pf-cta .btn-primary {
+  background: linear-gradient(135deg, #6D28D9, #1a6ef5);
+  border: none;
+  padding: 14px 36px;
+  box-shadow: 0 8px 30px rgba(109,40,217,0.35);
+}
+.pf-cta .btn-primary:hover {
+  box-shadow: 0 12px 40px rgba(109,40,217,0.5);
+  transform: translateY(-2px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .pf-grid { grid-template-columns: repeat(2, 1fr); }
+  .pf-card:nth-child(1),
+  .pf-card:nth-child(5) { grid-column: span 2; }
+}
+@media (max-width: 640px) {
+  .pf-grid { grid-template-columns: 1fr; }
+  .pf-card:nth-child(1),
+  .pf-card:nth-child(5) { grid-column: span 1; }
+  .pf-img-wrap,
+  .pf-card:nth-child(1) .pf-img-wrap,
+  .pf-card:nth-child(5) .pf-img-wrap { height: 200px; }
+  .pf-view-btn { opacity: 1; transform: translateY(0); }
+}

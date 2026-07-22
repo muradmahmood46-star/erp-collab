@@ -1,0 +1,36 @@
+{
+  "heading": "Why Choose Us",
+  "subheading": "What sets ERP Collab apart as your technology partner",
+  "items": [
+    {
+      "icon": "fa-award",
+      "title": "Engineering Excellence",
+      "text": "Our team combines technical expertise, industry best practices, and innovative thinking to develop secure, scalable, high-performance software."
+    },
+    {
+      "icon": "fa-handshake",
+      "title": "Client-First Partnership",
+      "text": "We believe successful projects are built on collaboration and trust, with transparent communication and alignment throughout every stage."
+    },
+    {
+      "icon": "fa-rocket",
+      "title": "Innovation-Driven Solutions",
+      "text": "From AI-powered applications to modern web technologies, we leverage the latest tools to build future-ready solutions that keep you ahead."
+    },
+    {
+      "icon": "fa-layer-group",
+      "title": "End-to-End Development",
+      "text": "From idea validation to deployment and ongoing support, we provide complete software development services under one roof."
+    },
+    {
+      "icon": "fa-shield-alt",
+      "title": "Quality, Security & Performance",
+      "text": "Every solution undergoes rigorous testing and optimization to meet enterprise-grade security, reliability, and performance standards."
+    },
+    {
+      "icon": "fa-sync-alt",
+      "title": "Long-Term Technology Partner",
+      "text": "We provide continuous support, maintenance, and technology consulting after deployment to ensure your solution evolves with your business."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "heading": "About ERP Collab",
+  "intro": "At ERP Collab, we specialize in building intelligent, scalable, and future-ready software solutions that help businesses innovate and grow. From custom software and ERP systems to web applications, RESTful APIs, and AI-powered solutions, we transform ideas into technology that delivers real business value.\n\nDriven by collaboration, engineering excellence, and a customer-first approach, we work closely with our clients to develop secure, reliable, and high-performance digital products. Our goal is to build lasting partnerships by delivering technology that empowers businesses to succeed in an ever-evolving digital world.",
+  "image": "assets/image2.jpeg",
+  "vision": {
+    "icon": "fa-eye",
+    "badge": "Vision",
+    "title": "Our Vision",
+    "text": "To become a trusted global technology partner — empowering businesses with intelligent, scalable software that transforms ideas into lasting success. We envision a future where every business, regardless of size, has access to enterprise-grade technology built for tomorrow."
+  },
+  "mission": {
+    "icon": "fa-bullseye",
+    "badge": "Mission",
+    "title": "Our Mission",
+    "text": "To turn ambitious ideas into intelligent software that empowers businesses to innovate with confidence. Through collaboration, engineering excellence, and emerging technologies, we deliver solutions that are secure, scalable, and designed to create lasting impact for every client we serve."
+  },
+  "history": {
+    "icon": "fa-landmark",
+    "title": "Our Story",
+    "subtitle": "From a bold idea to a growing technology company",
+    "timeline": [
+      {
+        "year": "2023",
+        "icon": "fa-seedling",
+        "event": "Founded by Tanveer Ahmed with a vision to modernize business through custom software & ERP solutions"
+      },
+      {
+        "year": "2023",
+        "icon": "fa-code",
+        "event": "Delivered first enterprise ERP system and launched core web development services"
+      },
+      {
+        "year": "2024",
+        "icon": "fa-robot",
+        "event": "Expanded into AI-powered solutions, RESTful APIs, and mobile application development"
+      },
+      {
+        "year": "2025",
+        "icon": "fa-globe",
+        "event": "Scaling globally with 15+ engineers, 50+ projects delivered across multiple industries"
+      },
+      {
+        "year": "2026",
+        "icon": "fa-rocket",
+        "event": "Launching next-gen SaaS products and enterprise AI integrations for international markets"
+      }
+    ]
+  }
+}

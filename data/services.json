@@ -1,0 +1,54 @@
+{
+  "heading": "Our Services",
+  "subheading": "End-to-end software solutions tailored to your business needs",
+  "items": [
+    {
+      "number": "01",
+      "icon": "fa-code",
+      "title": "Custom Software Development",
+      "description": "Tailor-made software aligned with your business goals — improving efficiency, automating processes, and driving sustainable growth."
+    },
+    {
+      "number": "02",
+      "icon": "fa-layer-group",
+      "title": "ERP Software Development",
+      "description": "Scalable ERP solutions that streamline operations and centralize data across finance, HR, inventory, sales, and core business functions."
+    },
+    {
+      "number": "03",
+      "icon": "fa-window-maximize",
+      "title": "Web Application Development",
+      "description": "Secure, responsive, high-performance web applications built with modern technologies for seamless digital experiences."
+    },
+    {
+      "number": "04",
+      "icon": "fa-mobile-alt",
+      "title": "Mobile App Development",
+      "description": "Intuitive, feature-rich mobile applications for Android and iOS that engage users and deliver real business results."
+    },
+    {
+      "number": "05",
+      "icon": "fa-brain",
+      "title": "AI Solutions & Automation",
+      "description": "Intelligent applications powered by AI — automating processes and enabling data-driven decisions at scale."
+    },
+    {
+      "number": "06",
+      "icon": "fa-plug",
+      "title": "RESTful API Development & Integration",
+      "description": "Secure, well-documented APIs and seamless third-party integrations for smooth communication between your systems."
+    },
+    {
+      "number": "07",
+      "icon": "fa-cloud",
+      "title": "Cloud Solutions",
+      "description": "Cloud migration, deployment, and management on AWS, Azure, and GCP — scalable, secure, and cost-optimized infrastructure."
+    },
+    {
+      "number": "08",
+      "icon": "fa-chart-line",
+      "title": "IT Consulting & Technology Strategy",
+      "description": "Strategic technology consulting to help you choose the right architecture, tools, and roadmap for long-term success."
+    }
+  ]
+}

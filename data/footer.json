@@ -1,0 +1,29 @@
+{
+  "logo": "ERP Collab",
+  "tagline": "Where Ideas Take Shape",
+  "about": "ERP Collab is a software engineering company specializing in custom software, ERP systems, AI applications, web development, and enterprise solutions. We partner with businesses to deliver innovative, scalable, and future-ready technology that drives long-term success.",
+  "quickLinks": [
+    { "label": "Home",          "href": "#home" },
+    { "label": "About",         "href": "#about" },
+    { "label": "Services",      "href": "#services" },
+    { "label": "Portfolio",     "href": "#portfolio" },
+    { "label": "Technologies",  "href": "#technologies" },
+    { "label": "Team",          "href": "#team" },
+    { "label": "Why Choose Us", "href": "#why-choose-us" },
+    { "label": "Contact",       "href": "#contact" }
+  ],
+  "newsletter": {
+    "heading": "Stay Updated",
+    "text": "Subscribe to receive the latest insights, technology updates, and company news from ERP Collab.",
+    "placeholder": "Your email address",
+    "buttonLabel": "Subscribe"
+  },
+  "social": [
+    { "icon": "fa-linkedin-in",  "href": "#", "label": "LinkedIn" },
+    { "icon": "fa-twitter",      "href": "#", "label": "Twitter/X" },
+    { "icon": "fa-facebook-f",   "href": "#", "label": "Facebook" },
+    { "icon": "fa-instagram",    "href": "#", "label": "Instagram" }
+  ],
+  "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.8!2d73.0479!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6789f3d5a41b8c0!2sIslamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000",
+  "copyright": "© 2024 ERP Collab. All rights reserved."
+}

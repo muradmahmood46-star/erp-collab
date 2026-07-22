@@ -1,0 +1,168 @@
+{
+  "heading": "Technologies We Use",
+  "subheading": "A modern, battle-tested stack across every layer of software development",
+  "tagline": "50+ Technologies. One Reliable Team.",
+  "categories": [
+    {
+      "id": "frontend",
+      "icon": "fa-laptop-code",
+      "name": "Frontend",
+      "badges": [
+        { "name": "HTML5",             "devicon": "devicon-html5-plain colored" },
+        { "name": "CSS3",              "devicon": "devicon-css3-plain colored" },
+        { "name": "JavaScript",        "devicon": "devicon-javascript-plain colored" },
+        { "name": "TypeScript",        "devicon": "devicon-typescript-plain colored" },
+        { "name": "React.js",          "devicon": "devicon-react-original colored" },
+        { "name": "Next.js",           "devicon": "devicon-nextjs-plain" },
+        { "name": "Vue.js",            "devicon": "devicon-vuejs-plain colored" },
+        { "name": "Angular",           "devicon": "devicon-angularjs-plain colored" },
+        { "name": "Tailwind CSS",      "devicon": "devicon-tailwindcss-plain colored" },
+        { "name": "Bootstrap",         "devicon": "devicon-bootstrap-plain colored" },
+        { "name": "Material UI",       "devicon": "devicon-materialui-plain colored" }
+      ]
+    },
+    {
+      "id": "backend",
+      "icon": "fa-server",
+      "name": "Backend",
+      "badges": [
+        { "name": "Node.js",           "devicon": "devicon-nodejs-plain colored" },
+        { "name": "Express.js",        "devicon": "devicon-express-original" },
+        { "name": "PHP",               "devicon": "devicon-php-plain colored" },
+        { "name": "Laravel",           "devicon": "devicon-laravel-plain colored" },
+        { "name": "Python",            "devicon": "devicon-python-plain colored" },
+        { "name": "Django",            "devicon": "devicon-django-plain colored" },
+        { "name": "FastAPI",           "devicon": "devicon-fastapi-plain colored" },
+        { "name": "ASP.NET Core",      "devicon": "devicon-dot-net-plain colored" },
+        { "name": "Spring Boot",       "devicon": "devicon-spring-plain colored" }
+      ]
+    },
+    {
+      "id": "mobile",
+      "icon": "fa-mobile-alt",
+      "name": "Mobile",
+      "badges": [
+        { "name": "Flutter",           "devicon": "devicon-flutter-plain colored" },
+        { "name": "React Native",      "devicon": "devicon-react-original colored" },
+        { "name": "Android",           "devicon": "devicon-android-plain colored" },
+        { "name": "Kotlin",            "devicon": "devicon-kotlin-plain colored" },
+        { "name": "Swift",             "devicon": "devicon-swift-plain colored" }
+      ]
+    },
+    {
+      "id": "database",
+      "icon": "fa-database",
+      "name": "Database",
+      "badges": [
+        { "name": "MySQL",             "devicon": "devicon-mysql-plain colored" },
+        { "name": "PostgreSQL",        "devicon": "devicon-postgresql-plain colored" },
+        { "name": "SQL Server",        "devicon": "devicon-microsoftsqlserver-plain colored" },
+        { "name": "MongoDB",           "devicon": "devicon-mongodb-plain colored" },
+        { "name": "Firebase",          "devicon": "devicon-firebase-plain colored" },
+        { "name": "Redis",             "devicon": "devicon-redis-plain colored" },
+        { "name": "SQLite",            "devicon": "devicon-sqlite-plain colored" }
+      ]
+    },
+    {
+      "id": "cloud",
+      "icon": "fa-cloud",
+      "name": "Cloud & DevOps",
+      "badges": [
+        { "name": "AWS",               "devicon": "devicon-amazonwebservices-original colored" },
+        { "name": "Azure",             "devicon": "devicon-azure-plain colored" },
+        { "name": "GCP",               "devicon": "devicon-googlecloud-plain colored" },
+        { "name": "Docker",            "devicon": "devicon-docker-plain colored" },
+        { "name": "Kubernetes",        "devicon": "devicon-kubernetes-plain colored" },
+        { "name": "GitHub",            "devicon": "devicon-github-original" },
+        { "name": "GitLab",            "devicon": "devicon-gitlab-plain colored" },
+        { "name": "Vercel",            "devicon": "devicon-vercel-original" },
+        { "name": "Netlify",           "devicon": "devicon-netlify-plain colored" }
+      ]
+    },
+    {
+      "id": "ai",
+      "icon": "fa-brain",
+      "name": "AI & ML",
+      "badges": [
+        { "name": "OpenAI",            "devicon": "fa fa-robot", "isFa": true },
+        { "name": "TensorFlow",        "devicon": "devicon-tensorflow-original colored" },
+        { "name": "PyTorch",           "devicon": "devicon-pytorch-original colored" },
+        { "name": "Python",            "devicon": "devicon-python-plain colored" },
+        { "name": "Pandas",            "devicon": "devicon-pandas-original colored" },
+        { "name": "NumPy",             "devicon": "devicon-numpy-original colored" },
+        { "name": "LangChain",         "devicon": "fa fa-link", "isFa": true },
+        { "name": "Hugging Face",      "devicon": "fa fa-smile", "isFa": true },
+        { "name": "Generative AI",     "devicon": "fa fa-microchip", "isFa": true }
+      ]
+    },
+    {
+      "id": "erp",
+      "icon": "fa-building",
+      "name": "ERP & Enterprise",
+      "badges": [
+        { "name": "Custom ERP",        "devicon": "fa fa-cogs", "isFa": true },
+        { "name": "CRM Development",   "devicon": "fa fa-users", "isFa": true },
+        { "name": "HR & Payroll",      "devicon": "fa fa-id-card", "isFa": true },
+        { "name": "Inventory Mgmt",    "devicon": "fa fa-boxes", "isFa": true },
+        { "name": "Accounting",        "devicon": "fa fa-calculator", "isFa": true },
+        { "name": "Supply Chain",      "devicon": "fa fa-truck", "isFa": true },
+        { "name": "BPA",               "devicon": "fa fa-project-diagram", "isFa": true },
+        { "name": "Integrations",      "devicon": "fa fa-plug", "isFa": true }
+      ]
+    },
+    {
+      "id": "api",
+      "icon": "fa-plug",
+      "name": "API & Integration",
+      "badges": [
+        { "name": "REST APIs",         "devicon": "fa fa-exchange-alt", "isFa": true },
+        { "name": "GraphQL",           "devicon": "devicon-graphql-plain colored" },
+        { "name": "OAuth 2.0",         "devicon": "fa fa-lock", "isFa": true },
+        { "name": "JWT",               "devicon": "fa fa-key", "isFa": true },
+        { "name": "Webhooks",          "devicon": "fa fa-bell", "isFa": true },
+        { "name": "Stripe",            "devicon": "devicon-stripe-original colored" },
+        { "name": "SMS & Email APIs",  "devicon": "fa fa-envelope", "isFa": true }
+      ]
+    },
+    {
+      "id": "uiux",
+      "icon": "fa-paint-brush",
+      "name": "UI/UX & Design",
+      "badges": [
+        { "name": "Figma",             "devicon": "devicon-figma-plain colored" },
+        { "name": "Adobe XD",          "devicon": "devicon-xd-plain colored" },
+        { "name": "Photoshop",         "devicon": "devicon-photoshop-plain colored" },
+        { "name": "Illustrator",       "devicon": "devicon-illustrator-plain colored" },
+        { "name": "Wireframing",       "devicon": "fa fa-pencil-ruler", "isFa": true },
+        { "name": "Prototyping",       "devicon": "fa fa-object-group", "isFa": true }
+      ]
+    },
+    {
+      "id": "security",
+      "icon": "fa-shield-alt",
+      "name": "Security",
+      "badges": [
+        { "name": "SSL/TLS",           "devicon": "fa fa-lock", "isFa": true },
+        { "name": "JWT",               "devicon": "fa fa-key", "isFa": true },
+        { "name": "OAuth",             "devicon": "fa fa-user-shield", "isFa": true },
+        { "name": "RBAC",              "devicon": "fa fa-sitemap", "isFa": true },
+        { "name": "MFA",               "devicon": "fa fa-mobile-alt", "isFa": true },
+        { "name": "Encryption",        "devicon": "fa fa-shield-alt", "isFa": true }
+      ]
+    },
+    {
+      "id": "qa",
+      "icon": "fa-vial",
+      "name": "QA & Testing",
+      "badges": [
+        { "name": "Postman",           "devicon": "devicon-postman-plain colored" },
+        { "name": "Jest",              "devicon": "devicon-jest-plain colored" },
+        { "name": "Cypress",           "devicon": "devicon-cypressio-plain colored" },
+        { "name": "Selenium",          "devicon": "devicon-selenium-original colored" },
+        { "name": "PHPUnit",           "devicon": "devicon-php-plain colored" },
+        { "name": "Unit Testing",      "devicon": "fa fa-check-circle", "isFa": true },
+        { "name": "Performance",       "devicon": "fa fa-tachometer-alt", "isFa": true }
+      ]
+    }
+  ]
+}

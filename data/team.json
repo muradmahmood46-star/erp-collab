@@ -1,0 +1,74 @@
+{
+  "heading": "Meet the Experts Behind ERP Collab",
+  "subheading": "At ERP Collab, our strength lies in our people. We are a team of passionate professionals committed to delivering innovative software solutions, exceptional quality, and outstanding client experiences.",
+  "groups": [
+    {
+      "groupName": "Leadership",
+      "layout": "leadership",
+      "members": [
+        {
+          "name": "Muddasir Irshad",
+          "role": "Solution Architect",
+          "bio": "Designs scalable software architectures and defines technical strategies for complex enterprise systems.",
+          "photo": "assets/team/muddasir.jpg",
+          "initials": "MI",
+          "isFounder": false
+        },
+        {
+          "name": "Tanveer Ahmed",
+          "role": "Founder & Chief Executive Officer (CEO)",
+          "bio": "Provides strategic leadership and drives the company's vision, innovation, and business growth.",
+          "photo": "assets/team/tanveer.jpg",
+          "initials": "TA",
+          "isFounder": true
+        },
+        {
+          "name": "Azhar Mir",
+          "role": "Senior Software Engineer & QA Lead / Technical Lead",
+          "bio": "Supervises development, performs quality assurance, and reviews code to ensure engineering standards.",
+          "photo": "assets/team/azhar.jpg",
+          "initials": "AM",
+          "isFounder": false
+        }
+      ]
+    },
+    {
+      "groupName": "Engineering Team",
+      "layout": "grid",
+      "members": [
+        {
+          "name": "Kainat Malik Awan",
+          "role": "Senior Software Engineer",
+          "bio": "",
+          "photo": "assets/team/kainat.jpg",
+          "initials": "KM",
+          "isFounder": false
+        },
+        {
+          "name": "Murad Mahmood",
+          "role": "AI Engineer",
+          "bio": "",
+          "photo": "",
+          "initials": "MM",
+          "isFounder": false
+        },
+        {
+          "name": "Saad Munir",
+          "role": "Full Stack Developer",
+          "bio": "",
+          "photo": "",
+          "initials": "SM",
+          "isFounder": false
+        },
+        {
+          "name": "AB Moeez Iftikhar",
+          "role": "Full Stack Developer",
+          "bio": "",
+          "photo": "",
+          "initials": "AI",
+          "isFounder": false
+        }
+      ]
+    }
+  ]
+}

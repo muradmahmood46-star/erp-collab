@@ -1,0 +1,10 @@
+{
+  "company": "ERP Collab",
+  "tagline": "Where Ideas Take Shape",
+  "description": "We build intelligent, scalable, and future-ready software solutions that help businesses innovate and grow.",
+  "backgroundImage": "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=1920&q=80",
+  "cta": [
+    { "label": "Get Started", "href": "#contact", "primary": true },
+    { "label": "Our Services", "href": "#services", "primary": false }
+  ]
+}

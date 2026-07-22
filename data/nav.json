@@ -1,0 +1,14 @@
+{
+  "logo": "ERP Collab",
+  "links": [
+    { "label": "Home",          "href": "#home" },
+    { "label": "About",         "href": "#about" },
+    { "label": "Services",      "href": "#services" },
+    { "label": "Portfolio",     "href": "#portfolio" },
+    { "label": "Technologies",  "href": "#technologies" },
+    { "label": "Our Team",      "href": "#team" },
+    { "label": "Why Choose Us", "href": "#why-choose-us" },
+    { "label": "Contact",       "href": "#contact" }
+  ],
+  "cta": { "label": "Get Started", "href": "#contact" }
+}

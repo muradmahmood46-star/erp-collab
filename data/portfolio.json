@@ -1,0 +1,54 @@
+{
+  "heading": "Our Portfolio",
+  "subheading": "A selection of projects that showcase our expertise and real-world impact",
+  "items": [
+    {
+      "title": "Enterprise ERP Management System",
+      "category": "ERP Solution",
+      "categoryColor": "#1a6ef5",
+      "description": "A comprehensive ERP platform streamlining finance, inventory, HR, procurement, and reporting for medium and large enterprises.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
+      "tech": ["React", "Node.js", "PostgreSQL", "REST API"]
+    },
+    {
+      "title": "AI Customer Support Assistant",
+      "category": "Artificial Intelligence",
+      "categoryColor": "#7c3aed",
+      "description": "An AI-powered virtual assistant automating customer interactions and improving support efficiency with natural language understanding.",
+      "image": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=900&q=80",
+      "tech": ["Python", "OpenAI", "FastAPI", "React"]
+    },
+    {
+      "title": "E-Commerce Platform",
+      "category": "Web Application",
+      "categoryColor": "#059669",
+      "description": "A scalable e-commerce solution with product management, secure payments, order tracking, and a seamless shopping experience.",
+      "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80",
+      "tech": ["Next.js", "Laravel", "MySQL", "Stripe"]
+    },
+    {
+      "title": "Hospital Management System",
+      "category": "Healthcare Software",
+      "categoryColor": "#dc2626",
+      "description": "A centralized platform for patient records, appointments, billing, pharmacy management, and hospital administration.",
+      "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80",
+      "tech": ["React", "Laravel", "MySQL"]
+    },
+    {
+      "title": "Real Estate Management Portal",
+      "category": "PropTech",
+      "categoryColor": "#d97706",
+      "description": "A full-featured property management system with listings, tenant management, lease tracking, and automated rent collection.",
+      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80",
+      "tech": ["Vue.js", "Node.js", "MongoDB", "Stripe"]
+    },
+    {
+      "title": "Learning Management System",
+      "category": "EdTech Platform",
+      "categoryColor": "#0891b2",
+      "description": "An interactive LMS with course creation, live classes, progress tracking, quizzes, and certification for online education providers.",
+      "image": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=900&q=80",
+      "tech": ["React", "Django", "PostgreSQL", "WebRTC"]
+    }
+  ]
+}
