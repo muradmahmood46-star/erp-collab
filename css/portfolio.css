@@ -58,8 +58,6 @@
   50%       { transform: translateY(-14px) rotate(15deg); opacity: 1; }
 }
 
-/* Card: remove old ::after dot */
-.pf-card::after { display: none; }
 .pf-diamond {
   position: absolute;
   transform: rotate(45deg);
