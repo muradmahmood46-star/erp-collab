@@ -156,12 +156,17 @@
   width: 220px;
   flex-shrink: 0;
   margin-top: 140px;
+  order: 1;
+}
+.team-grid-leadership .team-card:last-child {
+  order: 3;
 }
 .team-grid-leadership .team-card.founder {
   width: 280px;
   margin-top: 0;
   border: 2px solid var(--accent);
   box-shadow: 0 12px 48px rgba(26,110,245,.22);
+  order: 2;
 }
 
 /* Founder badge */
@@ -287,8 +292,10 @@
     align-items: start;
     gap: 10px;
   }
-  .team-grid-leadership .team-card { width: 100%; margin-top: 70px; }
-  .team-grid-leadership .team-card.founder { width: 100%; margin-top: 0; grid-column: 2; grid-row: 1; }
+  .team-grid-leadership .team-card { width: 100%; margin-top: 70px; order: unset; }
+  .team-grid-leadership .team-card:last-child { order: unset; }
+  .team-grid-leadership .team-card.founder { width: 100%; margin-top: 0; grid-column: 2; grid-row: 1; order: unset; }
+  .team-grid-leadership .team-card:nth-child(1) { grid-column: 2; grid-row: 1; }
   .team-grid-leadership .team-card:nth-child(2) { grid-column: 1; grid-row: 1; }
   .team-grid-leadership .team-card:nth-child(3) { grid-column: 3; grid-row: 1; }
   .team-grid-leadership .team-card:not(.founder) .team-bio { display: none; }
@@ -301,8 +308,10 @@
     align-items: start;
     gap: 8px;
   }
-  .team-grid-leadership .team-card { width: 100%; margin-top: 60px; }
-  .team-grid-leadership .team-card.founder { width: 140px; margin-top: 0; grid-column: 2; grid-row: 1; }
+  .team-grid-leadership .team-card { width: 100%; margin-top: 60px; order: unset; }
+  .team-grid-leadership .team-card:last-child { order: unset; }
+  .team-grid-leadership .team-card.founder { width: 140px; margin-top: 0; grid-column: 2; grid-row: 1; order: unset; }
+  .team-grid-leadership .team-card:nth-child(1) { grid-column: 2; grid-row: 1; }
   .team-grid-leadership .team-card:nth-child(2) { grid-column: 1; grid-row: 1; }
   .team-grid-leadership .team-card:nth-child(3) { grid-column: 3; grid-row: 1; }
   .team-grid-leadership .team-card:not(.founder) .team-bio { display: none; }
