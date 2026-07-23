@@ -7,20 +7,20 @@
       "layout": "leadership",
       "members": [
         {
-          "name": "Muddasir Irshad",
-          "role": "Solution Architect",
-          "bio": "Designs scalable software architectures and defines technical strategies for complex enterprise systems.",
-          "photo": "assets/team/muddasir.jpg",
-          "initials": "MI",
-          "isFounder": false
-        },
-        {
           "name": "Tanveer Ahmed",
           "role": "Founder & Chief Executive Officer (CEO)",
           "bio": "Provides strategic leadership and drives the company's vision, innovation, and business growth.",
           "photo": "assets/team/tanveer.jpg",
           "initials": "TA",
           "isFounder": true
+        },
+        {
+          "name": "Muddasir Irshad",
+          "role": "Solution Architect",
+          "bio": "Designs scalable software architectures and defines technical strategies for complex enterprise systems.",
+          "photo": "assets/team/muddasir.jpg",
+          "initials": "MI",
+          "isFounder": false
         },
         {
           "name": "Azhar Mir",
