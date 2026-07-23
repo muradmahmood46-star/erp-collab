@@ -58,10 +58,13 @@ function renderHero(data) {
   section.style.backgroundImage = `url('${data.backgroundImage}')`;
 
   // Wrap first word in accent span for the underline animation
-  const parts = data.company.split(' ');
-  document.getElementById('hero-company').innerHTML = parts.length > 1
-    ? `<span class="accent-word">${parts[0]}</span> ${parts.slice(1).join(' ')}`
-    : `<span class="accent-word">${parts[0]}</span>`;
+  const heroCompany = document.getElementById('hero-company');
+  if (heroCompany) {
+    const parts = data.company.split(' ');
+    heroCompany.innerHTML = parts.length > 1
+      ? `<span class="accent-word">${parts[0]}</span> ${parts.slice(1).join(' ')}`
+      : `<span class="accent-word">${parts[0]}</span>`;
+  }
 
   document.getElementById('hero-tagline').textContent = `"${data.tagline}"`;
   document.getElementById('hero-desc').textContent = data.description;
