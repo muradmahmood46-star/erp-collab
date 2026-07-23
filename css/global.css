@@ -24,7 +24,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; font-size: 15px; }
 
 body {
   font-family: var(--font-body);
@@ -39,28 +39,28 @@ a   { text-decoration: none; color: inherit; }
 ul  { list-style: none; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1140px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 48px;
 }
 
 /* Typography */
 h1,h2,h3,h4 { font-family: var(--font-head); font-weight: 700; line-height: 1.2; }
-h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
-h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
-h3 { font-size: 1.2rem; }
+h1 { font-size: clamp(2rem, 4vw, 3.2rem); }
+h2 { font-size: clamp(1.5rem, 2.5vw, 2.2rem); }
+h3 { font-size: 1.1rem; }
 
 /* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 14px 32px;
+  padding: 11px 26px;
   border-radius: 50px;
   font-family: var(--font-head);
   font-weight: 600;
-  font-size: .95rem;
+  font-size: .88rem;
   cursor: pointer;
   border: 2px solid transparent;
   transition: var(--transition);
@@ -82,12 +82,12 @@ h3 { font-size: 1.2rem; }
 .btn-full { width: 100%; justify-content: center; }
 
 /* Section utilities */
-.section { padding: 100px 0; }
+.section { padding: 80px 0; }
 .bg-light { background: #e8f0fe; }
 .bg-dark  { background: var(--dark); color: var(--white); }
 .bg-white { background: #ffffff; }
 
-.section-header { text-align: center; margin-bottom: 60px; }
+.section-header { text-align: center; margin-bottom: 48px; }
 .section-header h2 { color: var(--navy); margin-bottom: 12px; }
 .bg-dark .section-header h2 { color: var(--white); }
 .section-sub { color: var(--text-light); font-size: 1.05rem; max-width: 600px; margin: 0 auto 20px; }
@@ -120,6 +120,6 @@ h3 { font-size: 1.2rem; }
 }
 
 @media (max-width: 768px) {
-  .section { padding: 70px 0; }
+  .section { padding: 56px 0; }
   .container { padding: 0 20px; }
 }
