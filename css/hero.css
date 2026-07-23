@@ -40,10 +40,10 @@
 }
 .hero-inner {
   width: 100%;
-  padding: 100px 60px 60px 120px;
+  padding: 80px 60px 50px 100px;
 }
 .hero-inner > * {
-  max-width: 760px;
+  max-width: 680px;
 }
 
 /* Badge pill */
@@ -79,12 +79,12 @@
 
 /* Title */
 .hero-title {
-  font-size: clamp(2.8rem, 7vw, 5.8rem);
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
   font-weight: 800;
   line-height: 1.05;
   color: var(--white);
-  margin-bottom: 20px;
-  letter-spacing: -1.5px;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
   text-shadow: 0 4px 32px rgba(0,0,0,.4);
 }
 .hero-title .accent-word {
@@ -121,7 +121,7 @@
   flex-shrink: 0;
 }
 .hero-tagline {
-  font-size: clamp(1rem, 2vw, 1.45rem);
+  font-size: clamp(.9rem, 1.5vw, 1.15rem);
   color: rgba(255,255,255,.75);
   font-style: italic;
   font-family: var(--font-head);
@@ -131,10 +131,10 @@
 
 /* Description */
 .hero-desc {
-  font-size: 1.05rem;
+  font-size: .95rem;
   color: rgba(255,255,255,.6);
-  max-width: 580px;
-  margin-bottom: 40px;
+  max-width: 520px;
+  margin-bottom: 32px;
   line-height: 1.8;
   border-left: 3px solid rgba(26,110,245,.5);
   padding-left: 16px;
@@ -143,15 +143,15 @@
 /* Buttons */
 .hero-btns {
   display: flex;
-  gap: 16px;
+  gap: 14px;
   flex-wrap: wrap;
-  margin-bottom: 52px;
+  margin-bottom: 40px;
 }
 .hero-btns .btn-primary {
   background: var(--accent);
   box-shadow: 0 8px 28px rgba(26,110,245,.45);
-  padding: 15px 36px;
-  font-size: 1rem;
+  padding: 12px 28px;
+  font-size: .9rem;
 }
 .hero-btns .btn-primary:hover {
   box-shadow: 0 12px 36px rgba(26,110,245,.6);
@@ -161,8 +161,8 @@
   border-color: rgba(255,255,255,.35);
   backdrop-filter: blur(6px);
   background: rgba(255,255,255,.06);
-  padding: 15px 36px;
-  font-size: 1rem;
+  padding: 12px 28px;
+  font-size: .9rem;
 }
 .hero-btns .btn-outline:hover {
   background: rgba(255,255,255,.14);
@@ -172,18 +172,18 @@
 }
 
 /* Stats */
-.hero-stats { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+.hero-stats { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
 .hero-stat  { display: flex; flex-direction: column; gap: 2px; }
 .hero-stat-num {
   font-family: var(--font-head);
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: var(--white);
   line-height: 1;
 }
-.hero-stat-plus { color: var(--accent); font-size: 1.4rem; }
+.hero-stat-plus { color: var(--accent); font-size: 1.1rem; }
 .hero-stat-label {
-  font-size: .78rem;
+  font-size: .72rem;
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
