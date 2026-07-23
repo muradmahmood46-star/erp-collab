@@ -9,6 +9,7 @@
   background-position: center;
   background-attachment: fixed;
   overflow: hidden;
+  padding-top: 60px;
 }
 .hero-overlay {
   position: absolute;
@@ -121,12 +122,13 @@
   flex-shrink: 0;
 }
 .hero-tagline {
-  font-size: clamp(.9rem, 1.5vw, 1.15rem);
-  color: rgba(255,255,255,.75);
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  color: rgba(255,255,255,.95);
   font-style: italic;
   font-family: var(--font-head);
-  font-weight: 500;
+  font-weight: 600;
   margin: 0;
+  text-shadow: 0 2px 12px rgba(0,0,0,.4);
 }
 
 /* Description */
