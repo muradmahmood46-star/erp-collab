@@ -17,16 +17,7 @@
   justify-content: space-between;
   gap: 24px;
 }
-.nav-logo {
-  font-family: var(--font-head);
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--white);
-  letter-spacing: -.5px;
-  transition: color var(--transition);
-  flex-shrink: 0;
-}
-.navbar.scrolled .nav-logo { color: var(--navy); }
+.nav-logo { display: none; }
 
 .nav-menu { display: flex; align-items: center; gap: 8px; }
 .nav-links { display: flex; align-items: center; gap: 4px; }
