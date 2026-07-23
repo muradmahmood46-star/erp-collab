@@ -2,14 +2,14 @@
 .about-section { background: #f0f5ff; }
 
 .about-section .container {
-  max-width: 1200px;
+  max-width: 960px;
   padding: 0 40px;
 }
 
 .about-wrap {
   display: grid;
-  grid-template-columns: 58% 1fr;
-  gap: 40px;
+  grid-template-columns: 55% 1fr;
+  gap: 32px;
   align-items: stretch;
   margin-bottom: 60px;
 }
@@ -22,7 +22,7 @@
 }
 .about-image img {
   width: 100%;
-  height: 460px;
+  height: 360px;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -36,8 +36,8 @@
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 24px;
-  padding: 44px 48px;
+  border-radius: 20px;
+  padding: 28px 32px;
   box-shadow: 0 8px 48px rgba(26,110,245,0.18), 0 2px 16px rgba(0,0,0,0.12);
   position: relative;
   overflow: hidden;
@@ -72,8 +72,8 @@
 .about-line {
   display: block;
   color: rgba(255, 255, 255, 0.9);
-  font-size: .9rem;
-  line-height: 1.8;
+  font-size: .82rem;
+  line-height: 1.75;
   opacity: 0;
   transform: translateY(-20px);
   text-shadow: 0 1px 4px rgba(0,0,0,0.2);

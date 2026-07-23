@@ -24,7 +24,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; font-size: 14px; }
+html { scroll-behavior: smooth; font-size: 15px; }
 
 body {
   font-family: var(--font-body);
@@ -47,8 +47,8 @@ ul  { list-style: none; }
 
 /* Typography */
 h1,h2,h3,h4 { font-family: var(--font-head); font-weight: 700; line-height: 1.2; }
-h1 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
-h2 { font-size: clamp(1.4rem, 2.2vw, 2rem); }
+h1 { font-size: clamp(2rem, 3.5vw, 3rem); }
+h2 { font-size: clamp(1.5rem, 2.2vw, 2rem); }
 h3 { font-size: 1rem; }
 
 /* Buttons */
