@@ -296,7 +296,7 @@ function renderTeam(data) {
         </div>
         <div class="team-body">
           <h3>${m.name}</h3>
-          <p class="team-role">${m.role}</p>
+          <p class="team-role">${m.mobileRole ? `<span class="role-full">${m.role}</span><span class="role-mobile">${m.mobileRole}</span>` : m.role}</p>
           ${m.bio ? `<p class="team-bio">${m.bio}</p>` : ''}
         </div>`;
 
