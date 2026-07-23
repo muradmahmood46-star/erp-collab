@@ -2,16 +2,17 @@
 .about-section { background: #f0f5ff; }
 
 .about-section .container {
-  max-width: 960px;
+  max-width: 1200px;
   padding: 0 40px;
 }
 
 .about-wrap {
   display: grid;
-  grid-template-columns: 55% 1fr;
+  grid-template-columns: 50% 1fr;
   gap: 32px;
   align-items: stretch;
   margin-bottom: 60px;
+  height: 360px;
 }
 
 .about-image {
@@ -19,10 +20,11 @@
   overflow: hidden;
   box-shadow: 0 24px 64px rgba(26,110,245,0.13), 0 4px 16px rgba(0,0,0,0.08);
   position: relative;
+  height: 100%;
 }
 .about-image img {
   width: 100%;
-  height: 360px;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -37,13 +39,15 @@
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 20px;
-  padding: 28px 32px;
+  padding: 24px 28px;
   box-shadow: 0 8px 48px rgba(26,110,245,0.18), 0 2px 16px rgba(0,0,0,0.12);
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
 }
 .about-glass::before {
   content: '';
@@ -378,9 +382,9 @@
 
 @media (max-width: 1024px) {
   .about-section .container { max-width: 100%; padding: 0 32px; }
-  .about-wrap   { grid-template-columns: 1fr; gap: 28px; }
-  .about-image img { height: 420px; }
-  .about-glass  { padding: 36px 32px; }
+  .about-wrap   { grid-template-columns: 1fr; height: auto; gap: 24px; }
+  .about-image  { height: 300px; }
+  .about-glass  { padding: 28px 24px; height: auto; }
   .vm-grid      { grid-template-columns: 1fr; }
   .history-card { padding: 36px 32px; }
 }
