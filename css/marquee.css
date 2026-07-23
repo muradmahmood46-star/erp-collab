@@ -1,4 +1,14 @@
 /* marquee.css */
+.marquee-label {
+  text-align: center;
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
 .marquee-strip {
   background: var(--accent);
   padding: 18px 0;
