@@ -292,7 +292,7 @@
     align-items: start;
     gap: 10px;
   }
-  .team-grid-leadership .team-card { width: 100%; margin-top: 70px; order: unset; }
+  .team-grid-leadership .team-card { width: 100%; margin-top: 100px; order: unset; }
   .team-grid-leadership .team-card:last-child { order: unset; }
   .team-grid-leadership .team-card.founder { width: 100%; margin-top: 0; grid-column: 2; grid-row: 1; order: unset; }
   .team-grid-leadership .team-card:nth-child(1) { grid-column: 2; grid-row: 1; }
@@ -308,7 +308,7 @@
     align-items: start;
     gap: 8px;
   }
-  .team-grid-leadership .team-card { width: 100%; margin-top: 60px; order: unset; }
+  .team-grid-leadership .team-card { width: 100%; margin-top: 90px; order: unset; }
   .team-grid-leadership .team-card:last-child { order: unset; }
   .team-grid-leadership .team-card.founder { width: 140px; margin-top: 0; grid-column: 2; grid-row: 1; order: unset; }
   .team-grid-leadership .team-card:nth-child(1) { grid-column: 2; grid-row: 1; }
