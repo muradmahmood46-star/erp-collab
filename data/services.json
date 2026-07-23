@@ -1,54 +1,60 @@
 {
   "heading": "Our Services",
-  "subheading": "End-to-end software solutions tailored to your business needs",
+  "subheading": "Intelligent ERP extensions, integrations, and digital transformation solutions",
   "items": [
     {
       "number": "01",
-      "icon": "fa-code",
-      "title": "Custom Software Development",
-      "description": "Tailor-made software aligned with your business goals — improving efficiency, automating processes, and driving sustainable growth."
+      "icon": "fa-puzzle-piece",
+      "title": "ERP Extensions",
+      "description": "Custom modules that enhance ERP functionality without changing the core system."
     },
     {
       "number": "02",
-      "icon": "fa-layer-group",
-      "title": "ERP Software Development",
-      "description": "Scalable ERP solutions that streamline operations and centralize data across finance, HR, inventory, sales, and core business functions."
+      "icon": "fa-plug",
+      "title": "ERP Integration",
+      "description": "Secure integration between ERP and CRM, HR, payroll, banking, e-commerce, logistics, manufacturing systems, and cloud services."
     },
     {
       "number": "03",
-      "icon": "fa-window-maximize",
-      "title": "Web Application Development",
-      "description": "Secure, responsive, high-performance web applications built with modern technologies for seamless digital experiences."
+      "icon": "fa-cogs",
+      "title": "Workflow Automation",
+      "description": "Automate approvals, notifications, purchasing, document routing, inventory requests, and operational workflows."
     },
     {
       "number": "04",
-      "icon": "fa-mobile-alt",
-      "title": "Mobile App Development",
-      "description": "Intuitive, feature-rich mobile applications for Android and iOS that engage users and deliver real business results."
+      "icon": "fa-robot",
+      "title": "AI-Powered ERP Assistant",
+      "description": "An intelligent assistant that enables users to interact with ERP systems using natural language, generate reports, answer business questions, and automate routine tasks."
     },
     {
       "number": "05",
-      "icon": "fa-brain",
-      "title": "AI Solutions & Automation",
-      "description": "Intelligent applications powered by AI — automating processes and enabling data-driven decisions at scale."
+      "icon": "fa-mobile-alt",
+      "title": "Mobile ERP Applications",
+      "description": "Secure mobile solutions that provide ERP access anytime and anywhere."
     },
     {
       "number": "06",
-      "icon": "fa-plug",
-      "title": "RESTful API Development & Integration",
-      "description": "Secure, well-documented APIs and seamless third-party integrations for smooth communication between your systems."
+      "icon": "fa-chart-bar",
+      "title": "Business Intelligence & Analytics",
+      "description": "Interactive dashboards and real-time insights that support better decision-making."
     },
     {
       "number": "07",
-      "icon": "fa-cloud",
-      "title": "Cloud Solutions",
-      "description": "Cloud migration, deployment, and management on AWS, Azure, and GCP — scalable, secure, and cost-optimized infrastructure."
+      "icon": "fa-file-alt",
+      "title": "Document Management",
+      "description": "Digital document storage, approval workflows, and compliance-ready document handling."
     },
     {
       "number": "08",
-      "icon": "fa-chart-line",
-      "title": "IT Consulting & Technology Strategy",
-      "description": "Strategic technology consulting to help you choose the right architecture, tools, and roadmap for long-term success."
+      "icon": "fa-laptop-code",
+      "title": "Custom Business Applications",
+      "description": "Tailor-made applications designed to solve business challenges while integrating seamlessly with ERP systems."
+    },
+    {
+      "number": "09",
+      "icon": "fa-code",
+      "title": "API Development",
+      "description": "Secure APIs and middleware that connect enterprise applications and enable data exchange across platforms."
     }
   ]
 }

@@ -20,7 +20,7 @@
       "href": "mailto:tanveer.ahmed@erpcollab.com"
     }
   ],
-  "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.8!2d73.0479!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6789f3d5a41b8c0!2sIslamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000",
+  "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.837!2d73.04397!3d33.68440!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbef4e0a7b5c7%3A0x7e3b2c1d4f5a6b8e!2sImarat%20Downtown%2C%20Islamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000",
   "form": {
     "fields": [
       { "name": "name",    "type": "text",  "placeholder": "Your Name",    "required": true },

@@ -1,6 +1,37 @@
 /* footer.css */
 .footer { background: var(--navy); color: rgba(255,255,255,.75); }
 .footer-map { line-height: 0; }
+.footer-map .map-link-wrap {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer-map .map-link-wrap iframe { display: block; width: 100%; }
+.footer-map .map-overlay {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 20px rgba(26,110,245,0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.footer-map .map-link-wrap:hover .map-overlay {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-4px);
+}
 .footer-main { padding: 70px 0 40px; }
 
 .footer-grid {

@@ -1,7 +1,7 @@
 {
-  "company": "ERP Collab",
-  "tagline": "Where Ideas Take Shape",
-  "description": "We build intelligent, scalable, and future-ready software solutions that help businesses innovate and grow.",
+  "company": "ErpCollab",
+  "tagline": "Transforming ERP into a Connected, Intelligent Business Platform",
+  "description": "We help organizations maximize the value of their ERP investment by delivering smart extensions, intelligent integrations, and digital transformation solutions that simplify enterprise operations.",
   "backgroundImage": "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=1920&q=80",
   "cta": [
     { "label": "Get Started", "href": "#contact", "primary": true },

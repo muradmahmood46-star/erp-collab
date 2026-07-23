@@ -59,8 +59,9 @@ function renderHero(data) {
 
   // Wrap first word in accent span for the underline animation
   const parts = data.company.split(' ');
-  document.getElementById('hero-company').innerHTML =
-    `<span class="accent-word">${parts[0]}</span>${parts.length > 1 ? ' ' + parts.slice(1).join(' ') : ''}`;
+  document.getElementById('hero-company').innerHTML = parts.length > 1
+    ? `<span class="accent-word">${parts[0]}</span> ${parts.slice(1).join(' ')}`
+    : `<span class="accent-word">${parts[0]}</span>`;
 
   document.getElementById('hero-tagline').textContent = `"${data.tagline}"`;
   document.getElementById('hero-desc').textContent = data.description;
@@ -82,11 +83,10 @@ function renderAbout(data) {
   document.getElementById('about-img').src = data.image;
 
   const keywords = [
-    'intelligent', 'scalable', 'future-ready',
-    'ERP systems', 'AI-powered solutions', 'RESTful APIs',
-    'real business value', 'engineering excellence',
-    'customer-first', 'secure, reliable', 'high-performance',
-    'lasting partnerships'
+    'ERP systems', 'intelligent integrations', 'digital transformation',
+    'user-focused', 'scalable', 'backbone of business operations',
+    'increase productivity', 'automate processes', 'improve collaboration',
+    'seamless user experience', 'ErpCollab'
   ];
 
   function highlightKeywords(text) {
@@ -108,7 +108,7 @@ function renderAbout(data) {
     sentences.forEach(sentence => {
       const line = document.createElement('span');
       line.className = `about-line about-para-${pi + 1}`;
-      line.style.animationDelay = `${lineIndex * 0.18}s`;
+      line.style.animationDelay = `${0.1 + lineIndex * 0.22}s`;
       line.innerHTML = highlightKeywords(sentence.trim());
       introEl.appendChild(line);
       lineIndex++;
@@ -341,6 +341,9 @@ function renderContact(data) {
     info.appendChild(div);
   });
   document.getElementById('contact-map').src = data.mapEmbedUrl;
+  const form = document.getElementById('contact-form');
+  form.action = 'https://formspree.io/f/mojgnrob';
+  form.method = 'POST';
   const fieldsEl = document.getElementById('form-fields');
   data.form.fields.forEach(f => {
     const div = document.createElement('div');
@@ -359,7 +362,6 @@ function renderFooter(data) {
   document.getElementById('footer-logo').textContent = data.logo;
   document.getElementById('footer-tagline').textContent = `"${data.tagline}"`;
   document.getElementById('footer-about-text').textContent = data.about;
-  document.getElementById('footer-map').src = data.mapEmbedUrl;
   document.getElementById('footer-copyright').textContent = data.copyright;
 
   const social = document.getElementById('footer-social');

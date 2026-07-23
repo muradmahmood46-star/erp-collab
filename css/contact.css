@@ -53,6 +53,38 @@
 .map-wrap { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
 .map-wrap iframe { display: block; }
 
+.map-link-wrap {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+.map-link-wrap iframe { display: block; width: 100%; }
+.map-overlay {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 20px rgba(26,110,245,0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.map-link-wrap:hover .map-overlay {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-4px);
+}
+
 @media (max-width: 1024px) {
   .contact-grid { grid-template-columns: 1fr; gap: 36px; }
 }

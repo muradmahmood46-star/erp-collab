@@ -1,48 +1,38 @@
 {
-  "heading": "About ERP Collab",
-  "intro": "At ERP Collab, we specialize in building intelligent, scalable, and future-ready software solutions that help businesses innovate and grow. From custom software and ERP systems to web applications, RESTful APIs, and AI-powered solutions, we transform ideas into technology that delivers real business value.\n\nDriven by collaboration, engineering excellence, and a customer-first approach, we work closely with our clients to develop secure, reliable, and high-performance digital products. Our goal is to build lasting partnerships by delivering technology that empowers businesses to succeed in an ever-evolving digital world.",
+  "heading": "About ErpCollab",
+  "intro": "ErpCollab is a technology company dedicated to enhancing Enterprise Resource Planning (ERP) systems through innovative applications, intelligent integrations, and digital transformation solutions.\n\nWe believe that ERP systems should be the backbone of business operations—not a source of complexity. Our mission is to bridge the gaps that standard ERP solutions often leave behind by creating user-focused, scalable, and intelligent extensions that simplify daily work and improve business performance.\n\nInstead of replacing existing ERP systems, ErpCollab complements them with modern solutions that increase productivity, automate processes, improve collaboration, and deliver a seamless user experience.",
   "image": "assets/image2.jpeg",
   "vision": {
     "icon": "fa-eye",
     "badge": "Vision",
     "title": "Our Vision",
-    "text": "To become a trusted global technology partner — empowering businesses with intelligent, scalable software that transforms ideas into lasting success. We envision a future where every business, regardless of size, has access to enterprise-grade technology built for tomorrow."
+    "text": "To become the world's trusted innovation partner for ERP ecosystems by building intelligent, connected, and user-centric solutions that simplify enterprise operations."
   },
   "mission": {
     "icon": "fa-bullseye",
     "badge": "Mission",
     "title": "Our Mission",
-    "text": "To turn ambitious ideas into intelligent software that empowers businesses to innovate with confidence. Through collaboration, engineering excellence, and emerging technologies, we deliver solutions that are secure, scalable, and designed to create lasting impact for every client we serve."
+    "text": "Our mission is to empower organizations by delivering smart solutions that extend ERP capabilities, improve collaboration, automate business processes, and create exceptional user experiences."
   },
   "history": {
     "icon": "fa-landmark",
-    "title": "Our Story",
-    "subtitle": "From a bold idea to a growing technology company",
+    "title": "Our Purpose",
+    "subtitle": "Every ERP implementation is unique, and no standard ERP solution can meet every business requirement",
     "timeline": [
       {
-        "year": "2023",
-        "icon": "fa-seedling",
-        "event": "Founded by Tanveer Ahmed with a vision to modernize business through custom software & ERP solutions"
+        "year": "Gap",
+        "icon": "fa-puzzle-piece",
+        "event": "ErpCollab exists to close functional gaps by providing modern applications, integrations, and digital services that work seamlessly with existing ERP platforms."
       },
       {
-        "year": "2023",
-        "icon": "fa-code",
-        "event": "Delivered first enterprise ERP system and launched core web development services"
+        "year": "Value",
+        "icon": "fa-chart-line",
+        "event": "We help organizations maximize the value of their ERP investment while enabling employees to work more efficiently and make better decisions."
       },
       {
-        "year": "2024",
-        "icon": "fa-robot",
-        "event": "Expanded into AI-powered solutions, RESTful APIs, and mobile application development"
-      },
-      {
-        "year": "2025",
-        "icon": "fa-globe",
-        "event": "Scaling globally with 15+ engineers, 50+ projects delivered across multiple industries"
-      },
-      {
-        "year": "2026",
-        "icon": "fa-rocket",
-        "event": "Launching next-gen SaaS products and enterprise AI integrations for international markets"
+        "year": "Motto",
+        "icon": "fa-quote-left",
+        "event": "Connecting People, Processes, and ERP — Extending ERP. Empowering Business."
       }
     ]
   }
