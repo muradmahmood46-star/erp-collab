@@ -281,14 +281,15 @@
 }
 @media (max-width: 768px) {
   .team-grid { grid-template-columns: repeat(2, 1fr); justify-content: unset; }
-  .team-grid-leadership { gap: 12px; flex-wrap: nowrap; justify-content: center; }
+  .team-grid-leadership { gap: 12px; flex-wrap: nowrap; justify-content: center; align-items: flex-start; }
   .team-grid-leadership .team-card { width: 130px; margin-top: 80px; flex-shrink: 0; }
   .team-grid-leadership .team-card.founder { width: 160px; margin-top: 0; order: -1; }
+  .team-grid-leadership .team-card:not(.founder) .team-bio { display: none; }
 }
 @media (max-width: 480px) {
-  .team-grid { display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 14px; padding-bottom: 8px; }
-  .team-grid .team-card { min-width: 140px; flex-shrink: 0; }
-  .team-grid-leadership { gap: 10px; flex-wrap: nowrap; }
-  .team-grid-leadership .team-card { width: 120px; margin-top: 70px; flex-shrink: 0; }
-  .team-grid-leadership .team-card.founder { width: 150px; margin-top: 0; order: -1; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid-leadership { gap: 10px; flex-wrap: nowrap; justify-content: center; align-items: flex-start; }
+  .team-grid-leadership .team-card { width: 110px; margin-top: 70px; flex-shrink: 0; }
+  .team-grid-leadership .team-card.founder { width: 140px; margin-top: 0; order: -1; }
+  .team-grid-leadership .team-card:not(.founder) .team-bio { display: none; }
 }
