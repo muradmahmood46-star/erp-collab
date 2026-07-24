@@ -82,18 +82,18 @@
 /* Card overrides inside dark box — keep cards white for contrast */
 .team-box .team-card {
   background: rgba(15, 30, 80, 0.75);
-  border: 1px solid rgba(109,40,217,0.35);
+  border: 2px solid rgba(26,110,245,0.5);
   backdrop-filter: blur(12px);
   box-shadow: 0 4px 24px rgba(0,0,0,0.3);
 }
 .team-box .team-card:hover {
   background: rgba(20, 40, 100, 0.88);
-  border-color: rgba(109,40,217,0.6);
+  border-color: rgba(26,110,245,0.8);
   box-shadow: 0 16px 48px rgba(109,40,217,0.25);
 }
 .team-box .team-card.founder {
   background: rgba(10, 25, 70, 0.85);
-  border-color: rgba(109,40,217,0.55);
+  border-color: rgba(26,110,245,0.9);
   box-shadow: 0 12px 48px rgba(109,40,217,0.25);
 }
 .team-box .team-avatar {
@@ -209,6 +209,7 @@
 .team-card {
   background: #ffffff;
   border-radius: var(--radius);
+  border: 2px solid var(--accent);
   overflow: visible;
   box-shadow: var(--shadow);
   text-align: center;
