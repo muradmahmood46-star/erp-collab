@@ -199,21 +199,45 @@ function renderPortfolio(data) {
     div.className = 'pf-card reveal';
     div.style.transitionDelay = `${(i % 3) * 0.1}s`;
     const tags = p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('');
-    div.innerHTML = `
-      <div class="pf-img-wrap">
-        <img class="pf-img" src="${p.image}" alt="${p.title}" loading="lazy" />
-        <div class="pf-overlay">
-          <span class="pf-num">${String(i + 1).padStart(2, '0')}</span>
-          <span class="pf-view-btn">View Project <i class="fas fa-arrow-right"></i></span>
+
+    if (i === 0 && p.highlights) {
+      const highlightsHTML = p.highlights.map(h => `<li>${h}</li>`).join('');
+      div.innerHTML = `
+        <div class="pf-img-wrap">
+          <img class="pf-img" src="${p.image}" alt="${p.title}" loading="lazy" />
+          <div class="pf-overlay">
+            <span class="pf-num">${String(i + 1).padStart(2, '0')}</span>
+            <span class="pf-view-btn">View Project <i class="fas fa-arrow-right"></i></span>
+          </div>
         </div>
-      </div>
-      <div class="pf-body">
-        <span class="pf-cat" style="background:${p.categoryColor}">${p.category}</span>
-        <h3>${p.title}</h3>
-        <p>${p.description}</p>
-        <div class="pf-divider"></div>
-        <div class="tech-tags">${tags}</div>
-      </div>`;
+        <div class="pf-body">
+          <div class="pf-featured-meta">
+            <span class="pf-cat" style="background:${p.categoryColor}">${p.category}</span>
+            <span class="pf-client-badge"><i class="fas fa-building"></i> <a href="${p.clientUrl}" target="_blank" rel="noopener">${p.client}</a></span>
+          </div>
+          <h3>${p.title}</h3>
+          <p>${p.description}</p>
+          <ul class="pf-highlights">${highlightsHTML}</ul>
+          <div class="pf-divider"></div>
+          <div class="tech-tags">${tags}</div>
+        </div>`;
+    } else {
+      div.innerHTML = `
+        <div class="pf-img-wrap">
+          <img class="pf-img" src="${p.image}" alt="${p.title}" loading="lazy" />
+          <div class="pf-overlay">
+            <span class="pf-num">${String(i + 1).padStart(2, '0')}</span>
+            <span class="pf-view-btn">View Project <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="pf-body">
+          <span class="pf-cat" style="background:${p.categoryColor}">${p.category}</span>
+          <h3>${p.title}</h3>
+          <p>${p.description}</p>
+          <div class="pf-divider"></div>
+          <div class="tech-tags">${tags}</div>
+        </div>`;
+    }
     grid.appendChild(div);
   });
 }

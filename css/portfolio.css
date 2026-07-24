@@ -314,6 +314,34 @@
   font-size: 1rem;
 }
 
+/* ── Featured card meta row ── */
+.pf-featured-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.pf-featured-meta .pf-cat { margin-bottom: 0; }
+
+.pf-client-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 50px;
+  background: rgba(26,110,245,0.08);
+  color: #1a6ef5;
+  border: 1px solid rgba(26,110,245,0.2);
+}
+.pf-client-badge a {
+  color: inherit;
+  text-decoration: none;
+}
+.pf-client-badge a:hover { text-decoration: underline; }
+
 /* ── Bottom CTA ── */
 .pf-cta {
   margin-top: 56px;
