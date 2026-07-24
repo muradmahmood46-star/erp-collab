@@ -10,7 +10,7 @@
           "name": "Tanveer Ahmed",
           "role": "Founder & Chief Executive Officer (CEO)",
           "bio": "Provides strategic leadership and drives the company's vision, innovation, and business growth.",
-          "photo": "assets/ceo pic.png",
+          "photo": "assets/ceo pic.jpeg",
           "initials": "TA",
           "isFounder": true
         },
@@ -65,7 +65,7 @@
           "name": "AB Moeez Iftikhar",
           "role": "Full Stack Developer",
           "bio": "",
-          "photo": "",
+          "photo": "assets/moeez pic.png",
           "initials": "AI",
           "isFounder": false
         }
