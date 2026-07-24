@@ -199,6 +199,9 @@ function renderPortfolio(data) {
     div.className = 'pf-card reveal';
     div.style.transitionDelay = `${(i % 3) * 0.1}s`;
     const tags = p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('');
+    const highlightsHTML = p.highlights
+      ? `<ul class="pf-highlights">${p.highlights.map(h => `<li>${h}</li>`).join('')}</ul>`
+      : '';
     div.innerHTML = `
       <div class="pf-img-wrap">
         <img class="pf-img" src="${p.image}" alt="${p.title}" loading="lazy" />
@@ -211,6 +214,7 @@ function renderPortfolio(data) {
         <span class="pf-cat" style="background:${p.categoryColor}">${p.category}</span>
         <h3>${p.title}</h3>
         <p>${p.description}</p>
+        ${highlightsHTML}
         <div class="pf-divider"></div>
         <div class="tech-tags">${tags}</div>
       </div>`;
