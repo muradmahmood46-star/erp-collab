@@ -200,8 +200,7 @@ function renderPortfolio(data) {
     div.style.transitionDelay = `${(i % 3) * 0.1}s`;
     const tags = p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('');
 
-    if (i === 0 && p.highlights) {
-      const highlightsHTML = p.highlights.map(h => `<li>${h}</li>`).join('');
+    if (i === 0 && p.overview) {
       div.innerHTML = `
         <div class="pf-img-wrap">
           <img class="pf-img" src="${p.image}" alt="${p.title}" loading="lazy" />
@@ -216,8 +215,20 @@ function renderPortfolio(data) {
             <span class="pf-client-badge"><i class="fas fa-building"></i> <a href="${p.clientUrl}" target="_blank" rel="noopener">${p.client}</a></span>
           </div>
           <h3>${p.title}</h3>
-          <p>${p.description}</p>
-          <ul class="pf-highlights">${highlightsHTML}</ul>
+          <div class="pf-case-sections">
+            <div class="pf-case-block">
+              <span class="pf-case-label"><i class="fas fa-user-tie"></i> Client</span>
+              <p>${p.overview}</p>
+            </div>
+            <div class="pf-case-block">
+              <span class="pf-case-label"><i class="fas fa-exclamation-circle"></i> Challenge</span>
+              <p>${p.challenge}</p>
+            </div>
+            <div class="pf-case-block">
+              <span class="pf-case-label"><i class="fas fa-lightbulb"></i> Our Solution</span>
+              <p>${p.solution}</p>
+            </div>
+          </div>
           <div class="pf-divider"></div>
           <div class="tech-tags">${tags}</div>
         </div>`;

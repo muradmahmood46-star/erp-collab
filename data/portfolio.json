@@ -3,20 +3,15 @@
   "subheading": "A selection of projects that showcase our expertise and real-world impact",
   "items": [
     {
-      "title": "United Cement Company – Enterprise Digital Transformation",
+      "title": "United Cement Company – Digital Transformation & ERP Integration",
       "client": "United Cement Company",
       "clientUrl": "https://unitedcement.com.sa",
       "category": "ERP Integration",
       "categoryColor": "#1a6ef5",
-      "description": "ErpCollab Ltd partnered with United Cement Company to modernize its digital presence and streamline key business processes through a fully integrated web platform connected with Infor ERP LN — transforming how the company interacts with customers, dealers, and vendors while automating critical back-office operations.",
       "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80",
-      "highlights": [
-        "Customer self-service ordering portal integrated with Infor ERP LN",
-        "Automated vendor registration & one-click ERP Business Partner creation",
-        "Dealer portal with real-time order tracking and sales visibility",
-        "AI-powered recruitment portal with CV parsing and end-to-end workflow",
-        "CMS for news, announcements, and career opportunities"
-      ],
+      "overview": "ErpCollab Ltd partnered with United Cement Company to modernize its digital presence and streamline key business processes through a fully integrated web platform connected with Infor ERP LN.",
+      "challenge": "The company relied on manual processes across multiple areas — no online ordering channel for customers, no self-service platform for dealers, manual vendor registration across multiple ERP sessions, and content updates requiring technical intervention.",
+      "solution": "ErpCollab delivered a suite of integrated portals: a CMS-powered corporate website, a customer ordering portal, a dealer self-service platform, an automated vendor registration system with one-click ERP Business Partner creation, and an AI-powered recruitment portal with CV parsing — all seamlessly connected to Infor ERP LN.",
       "tech": ["Infor ERP LN", "React", ".NET", "Python", "AI/ML", "REST API", "Workflow Automation"]
     },
     {

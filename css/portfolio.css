@@ -314,6 +314,41 @@
   font-size: 1rem;
 }
 
+/* ── Featured card case study blocks ── */
+.pf-case-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.pf-case-block {
+  background: rgba(26,110,245,0.04);
+  border-left: 3px solid #1a6ef5;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 14px;
+}
+.pf-case-block:nth-child(2) { border-left-color: #dc2626; background: rgba(220,38,38,0.04); }
+.pf-case-block:nth-child(3) { border-left-color: #059669; background: rgba(5,150,105,0.04); }
+.pf-case-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1a6ef5;
+  margin-bottom: 5px;
+}
+.pf-case-block:nth-child(2) .pf-case-label { color: #dc2626; }
+.pf-case-block:nth-child(3) .pf-case-label { color: #059669; }
+.pf-case-block p {
+  font-size: 0.84rem;
+  color: var(--text-light);
+  line-height: 1.65;
+  margin: 0;
+}
+
 /* ── Featured card meta row ── */
 .pf-featured-meta {
   display: flex;
