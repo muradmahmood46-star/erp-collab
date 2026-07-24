@@ -2,6 +2,7 @@
 .hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -10,6 +11,7 @@
   background-attachment: fixed;
   overflow: hidden;
   padding-top: 60px;
+  box-sizing: border-box;
 }
 .hero-overlay {
   position: absolute;
@@ -41,7 +43,7 @@
 }
 .hero-inner {
   width: 100%;
-  padding: 72px 60px 50px 100px;
+  padding: clamp(20px, 5vh, 72px) 60px clamp(16px, 3vh, 50px) 100px;
 }
 .hero-inner > * {
   max-width: 680px;
@@ -57,7 +59,7 @@
   backdrop-filter: blur(8px);
   padding: 7px 18px;
   border-radius: 50px;
-  margin-bottom: 16px;
+  margin-bottom: clamp(8px, 1.5vh, 16px);
   font-family: var(--font-head);
   font-size: .82rem;
   font-weight: 600;
@@ -80,11 +82,11 @@
 
 /* Title */
 .hero-title {
-  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  font-size: clamp(1.8rem, 4vw, 4.2rem);
   font-weight: 800;
   line-height: 1.05;
   color: var(--white);
-  margin-bottom: 16px;
+  margin-bottom: clamp(8px, 1.5vh, 16px);
   letter-spacing: -1px;
   text-shadow: 0 4px 32px rgba(0,0,0,.4);
 }
@@ -111,7 +113,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 22px;
+  margin-bottom: clamp(10px, 1.8vh, 22px);
 }
 .hero-tagline-wrap::before {
   content: '';
@@ -136,8 +138,8 @@
   font-size: .95rem;
   color: rgba(255,255,255,.6);
   max-width: 520px;
-  margin-bottom: 32px;
-  line-height: 1.8;
+  margin-bottom: clamp(16px, 2.5vh, 32px);
+  line-height: 1.7;
   border-left: 3px solid rgba(26,110,245,.5);
   padding-left: 16px;
 }
@@ -147,7 +149,7 @@
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: clamp(20px, 3vh, 40px);
 }
 .hero-btns .btn-primary {
   background: var(--accent);
