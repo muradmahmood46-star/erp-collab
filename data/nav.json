@@ -8,7 +8,8 @@
     { "label": "Technologies",  "href": "#technologies" },
     { "label": "Our Team",      "href": "#team" },
     { "label": "Why Choose Us", "href": "#why-choose-us" },
-    { "label": "Contact",       "href": "#contact" }
+    { "label": "Partners",       "href": "#partners" },
+    { "label": "Contact",        "href": "#contact" }
   ],
   "cta": { "label": "Get Started", "href": "#contact" }
 }

@@ -1,0 +1,24 @@
+{
+  "heading": "Our Partners",
+  "subheading": "Trusted alliances that extend our reach and deepen our expertise",
+  "items": [
+    {
+      "name": "Mazeppa",
+      "tagline": "Experts You Can Trust for Project Success",
+      "description": "Mazeppa Consulting is a Norwegian consulting company established in 1998 owned by the employees. Mazeppa has a partnership agreement (IPN) with Infor, for sale, implementation and support of Infor LN, one of the world's leading and most flexible ERP systems.",
+      "icon": "fa-handshake",
+      "badge": "IPN Partner · Infor LN",
+      "country": "Norway",
+      "flag": "🇳🇴"
+    },
+    {
+      "name": "HERFAH",
+      "tagline": "Innovating Business with Technology",
+      "description": "HERFAH is an innovative IT company specializing in cutting-edge digital solutions. Offering services from software development to IT consulting, HERFAH is dedicated to transforming ideas into powerful digital experiences. We drive growth through technology.",
+      "icon": "fa-microchip",
+      "badge": "Technology Partner",
+      "country": "Saudi Arabia",
+      "flag": "🇸🇦"
+    }
+  ]
+}

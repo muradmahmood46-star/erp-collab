@@ -3,7 +3,7 @@ import { onReady } from './main.js';
 const COMPONENTS = [
   'header', 'hero', 'about', 'marquee', 'services',
   'portfolio', 'technologies', 'team',
-  'why-choose-us', 'contact', 'footer'
+  'why-choose-us', 'partners', 'contact', 'footer'
 ];
 
 const DATA_FILE = { 'header': 'nav' };
@@ -343,6 +343,54 @@ function renderTeam(data) {
   });
 }
 
+function renderPartners(data) {
+  document.getElementById('partners-heading').textContent = data.heading;
+  document.getElementById('partners-subheading').textContent = data.subheading;
+
+  const slider = document.getElementById('pt-slider');
+  const dotsEl = document.getElementById('pt-dots');
+  let current = 0;
+
+  const track = document.createElement('div');
+  track.className = 'pt-track';
+
+  data.items.forEach((p, i) => {
+    const card = document.createElement('div');
+    card.className = 'pt-card reveal';
+    card.innerHTML = `
+      <div class="pt-card-inner">
+        <div class="pt-icon-col">
+          <div class="pt-icon-wrap"><i class="fas ${p.icon}"></i></div>
+          <span class="pt-flag">${p.flag}</span>
+          <span class="pt-country">${p.country}</span>
+        </div>
+        <div class="pt-content">
+          <span class="pt-badge"><i class="fas fa-certificate"></i> ${p.badge}</span>
+          <h3>${p.name}</h3>
+          <p class="pt-tagline">${p.tagline}</p>
+          <p class="pt-desc">${p.description}</p>
+        </div>
+      </div>`;
+    track.appendChild(card);
+
+    const dot = document.createElement('button');
+    dot.className = `pt-dot${i === 0 ? ' active' : ''}`;
+    dot.addEventListener('click', () => goTo(i));
+    dotsEl.appendChild(dot);
+  });
+
+  slider.appendChild(track);
+
+  function goTo(idx) {
+    current = (idx + data.items.length) % data.items.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dotsEl.querySelectorAll('.pt-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  document.getElementById('pt-prev').addEventListener('click', () => goTo(current - 1));
+  document.getElementById('pt-next').addEventListener('click', () => goTo(current + 1));
+}
+
 function renderWhyChooseUs(data) {
   document.getElementById('why-heading').textContent = data.heading;
   document.getElementById('why-subheading').textContent = data.subheading;
@@ -436,6 +484,7 @@ const RENDERERS = {
   technologies:    renderTechnologies,
   team:            renderTeam,
   'why-choose-us': renderWhyChooseUs,
+  partners:        renderPartners,
   contact:         renderContact,
   footer:          renderFooter
 };
