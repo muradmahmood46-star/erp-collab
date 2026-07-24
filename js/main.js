@@ -56,15 +56,12 @@ function updateActiveLink() {
 function initScrollReveal() {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
+      e.target.classList.toggle('visible', e.isIntersecting);
     });
   }, { threshold: 0.12 });
 
   const observe = () => {
-    document.querySelectorAll('.reveal:not(.visible), .svc-card:not(.visible), .pf-card:not(.visible), .card:not(.visible), .team-card:not(.visible), .tech-badge:not(.visible), .about-glass:not(.visible)').forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal, .svc-card, .pf-card, .card, .team-card, .tech-badge, .about-glass').forEach(el => observer.observe(el));
   };
 
   observe();
@@ -87,7 +84,6 @@ function initScrollReveal() {
           if (current >= target) clearInterval(timer);
         }, step);
       });
-      counterObserver.unobserve(e.target);
     });
   }, { threshold: 0.3 });
 
