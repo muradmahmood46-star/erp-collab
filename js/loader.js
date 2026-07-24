@@ -364,8 +364,8 @@ function renderPartners(data) {
             ? `<div class="pt-logo-wrap"><img src="${p.logo}" alt="${p.name} logo" class="pt-logo" /></div>`
             : `<div class="pt-icon-wrap"><i class="fas ${p.icon}"></i></div>`
           }
-          <span class="pt-flag">${p.flag}</span>
-          <span class="pt-country">${p.country}</span>
+          ${p.flag ? `<span class="pt-flag">${p.flag}</span>` : ''}
+          ${p.country ? `<span class="pt-country">${p.country}</span>` : ''}
         </div>
         <div class="pt-content">
           <span class="pt-badge"><i class="fas fa-certificate"></i> ${p.badge}</span>
