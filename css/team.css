@@ -250,8 +250,14 @@
 .team-photo {
   width: 100%; height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center 15%;
   border-radius: 50%;
+}
+.team-card.founder .team-photo {
+  object-position: center 10%;
+  object-fit: cover;
+  transform: scale(0.85);
+  transform-origin: center 15%;
 }
 .team-initials {
   font-family: var(--font-head);
