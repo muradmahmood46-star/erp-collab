@@ -81,20 +81,20 @@
 
 /* Card overrides inside dark box — keep cards white for contrast */
 .team-box .team-card {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  background: rgba(15, 30, 80, 0.75);
+  border: 1px solid rgba(109,40,217,0.35);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
 }
 .team-box .team-card:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: rgba(109,40,217,0.4);
-  box-shadow: 0 16px 48px rgba(109,40,217,0.2);
+  background: rgba(20, 40, 100, 0.88);
+  border-color: rgba(109,40,217,0.6);
+  box-shadow: 0 16px 48px rgba(109,40,217,0.25);
 }
 .team-box .team-card.founder {
-  background: rgba(255,255,255,0.09);
-  border-color: rgba(26,110,245,0.45);
-  box-shadow: 0 12px 48px rgba(26,110,245,0.2);
+  background: rgba(10, 25, 70, 0.85);
+  border-color: rgba(109,40,217,0.55);
+  box-shadow: 0 12px 48px rgba(109,40,217,0.25);
 }
 .team-box .team-avatar {
   border-color: #6D28D9;
@@ -105,24 +105,22 @@
   box-shadow: 0 0 18px 5px rgba(109,40,217,0.7), 0 0 36px 10px rgba(109,40,217,0.35);
 }
 .team-box .team-body h3 {
-  background: linear-gradient(90deg, #93c5fd, #c4b5fd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: none;
+  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
+  font-weight: 700;
 }
 .team-box .team-card.founder .team-body h3 {
-  background: linear-gradient(90deg, #60a5fa, #a78bfa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: none;
+  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
 }
 .team-box .team-role {
-  background: linear-gradient(90deg, #a78bfa, #60a5fa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: none;
+  -webkit-text-fill-color: #a78bfa;
+  color: #a78bfa;
 }
-.team-box .team-bio { color: rgba(255,255,255,0.5); }
+.team-box .team-bio { color: rgba(255,255,255,0.7); }
 .team-box .founder-badge {
   background: linear-gradient(135deg, #1a6ef5, #6D28D9);
 }
