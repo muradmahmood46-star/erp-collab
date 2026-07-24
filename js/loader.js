@@ -360,7 +360,10 @@ function renderPartners(data) {
     card.innerHTML = `
       <div class="pt-card-inner">
         <div class="pt-icon-col">
-          <div class="pt-icon-wrap"><i class="fas ${p.icon}"></i></div>
+          ${p.logo
+            ? `<div class="pt-logo-wrap"><img src="${p.logo}" alt="${p.name} logo" class="pt-logo" /></div>`
+            : `<div class="pt-icon-wrap"><i class="fas ${p.icon}"></i></div>`
+          }
           <span class="pt-flag">${p.flag}</span>
           <span class="pt-country">${p.country}</span>
         </div>

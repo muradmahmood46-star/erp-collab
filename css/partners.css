@@ -125,8 +125,8 @@
 .pt-card-inner {
   background: #ffffff;
   border: 1px solid rgba(26,110,245,0.12);
-  border-radius: 28px;
-  padding: 52px 56px;
+  border-radius: 24px;
+  padding: 36px 40px;
   position: relative;
   overflow: hidden;
   box-shadow:
@@ -134,7 +134,7 @@
     0 1px 0 rgba(26,110,245,0.06) inset;
   transition: box-shadow 0.4s ease, border-color 0.4s ease;
   display: flex;
-  gap: 56px;
+  gap: 40px;
   align-items: center;
 }
 .pt-card-inner:hover {
@@ -173,12 +173,12 @@
 }
 
 .pt-icon-wrap {
-  width: 96px; height: 96px;
-  border-radius: 24px;
+  width: 80px; height: 80px;
+  border-radius: 20px;
   background: linear-gradient(135deg, rgba(26,110,245,0.1), rgba(109,40,217,0.08));
   border: 1px solid rgba(26,110,245,0.18);
   display: flex; align-items: center; justify-content: center;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #1a6ef5;
   position: relative;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -186,6 +186,19 @@
 .pt-card-inner:hover .pt-icon-wrap {
   transform: scale(1.08) rotate(-4deg);
   box-shadow: 0 8px 28px rgba(26,110,245,0.2);
+}
+
+.pt-logo-wrap {
+  width: 120px; height: 80px;
+  display: flex; align-items: center; justify-content: center;
+  transition: transform 0.4s ease;
+}
+.pt-card-inner:hover .pt-logo-wrap { transform: scale(1.05); }
+.pt-logo {
+  max-width: 120px;
+  max-height: 70px;
+  width: auto; height: auto;
+  object-fit: contain;
 }
 
 .pt-flag {
@@ -221,10 +234,10 @@
 }
 
 .pt-content h3 {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: 800;
   color: var(--navy);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   line-height: 1.1;
 }
 
@@ -237,12 +250,12 @@
 }
 
 .pt-desc {
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   color: var(--text-light);
-  line-height: 1.8;
-  max-width: 560px;
+  line-height: 1.75;
+  max-width: 520px;
   border-left: 3px solid rgba(26,110,245,0.25);
-  padding-left: 16px;
+  padding-left: 14px;
 }
 
 /* ── Arrows ── */
