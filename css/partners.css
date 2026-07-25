@@ -133,9 +133,9 @@
   background: conic-gradient(
     from var(--angle, 0deg),
     transparent 0deg,
-    transparent 270deg,
-    #38bdf8 300deg,
-    #0ea5e9 330deg,
+    transparent 230deg,
+    #38bdf8 275deg,
+    #0ea5e9 320deg,
     #38bdf8 360deg
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -160,14 +160,14 @@
   padding: 36px 40px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 24px rgba(26,110,245,0.07);
+  box-shadow: 0 4px 24px rgba(26,110,245,0.08), 0 8px 32px rgba(0,0,0,0.08);
   transition: box-shadow 0.4s ease;
   display: flex;
   gap: 40px;
   align-items: center;
 }
 .pt-card-inner:hover {
-  box-shadow: 0 16px 56px rgba(26,110,245,0.12);
+  box-shadow: 0 8px 40px rgba(26,110,245,0.14), 0 16px 48px rgba(0,0,0,0.12);
 }
 
 /* Remove old top line */
@@ -261,9 +261,9 @@
 .pt-tagline {
   font-size: 1rem;
   font-weight: 600;
-  color: #1a6ef5;
+  color: #0d1b2a;
   margin-bottom: 16px;
-  font-style: italic;
+  font-style: normal;
 }
 
 .pt-desc {
