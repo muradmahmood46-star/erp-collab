@@ -144,9 +144,8 @@
   position: relative;
   overflow: visible;
   box-shadow:
-    -10px 10px 36px rgba(56,189,248,0.3),
-    10px -10px 20px rgba(0,0,0,0.1),
-    0 12px 40px rgba(0,0,0,0.14);
+    -4px -4px 0px rgba(56,189,248,0.6),
+    6px 6px 20px rgba(0,0,0,0.18);
   transition: box-shadow 0.4s ease;
   display: flex;
   gap: 40px;
@@ -154,9 +153,8 @@
 }
 .pt-card-inner:hover {
   box-shadow:
-    -14px 14px 48px rgba(56,189,248,0.4),
-    14px -14px 28px rgba(0,0,0,0.12),
-    0 16px 52px rgba(0,0,0,0.18);
+    -4px -4px 0px rgba(56,189,248,0.8),
+    8px 8px 28px rgba(0,0,0,0.24);
 }
 
 /* Remove old top line */
