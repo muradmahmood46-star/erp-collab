@@ -344,7 +344,9 @@ function renderTeam(data) {
 }
 
 function renderPartners(data) {
-  document.getElementById('partners-heading').textContent = data.heading;
+  const headingEl = document.getElementById('partners-heading');
+  const words = data.heading.toUpperCase().split(' ');
+  headingEl.innerHTML = `<span style="color:#0d1b2a">${words[0]}</span> <span style="color:#38bdf8">${words.slice(1).join(' ')}</span>`;
   document.getElementById('partners-subheading').textContent = data.subheading;
 
   const slider = document.getElementById('pt-slider');
@@ -359,6 +361,10 @@ function renderPartners(data) {
     card.className = 'pt-card reveal';
     card.innerHTML = `
       <div class="pt-card-inner">
+        <span class="pt-corner pt-corner-tl"></span>
+        <span class="pt-corner pt-corner-tr"></span>
+        <span class="pt-corner pt-corner-bl"></span>
+        <span class="pt-corner pt-corner-br"></span>
         <div class="pt-icon-col">
           ${p.logo
             ? `<div class="pt-logo-wrap"><img src="${p.logo}" alt="${p.name} logo" class="pt-logo" /></div>`
@@ -390,7 +396,10 @@ function renderPartners(data) {
     dotsEl.querySelectorAll('.pt-dot').forEach((d, i) => d.classList.toggle('active', i === current));
   }
 
+  document.getElementById('pt-prev').addEventListener('click', () => goTo(current - 1));
   document.getElementById('pt-next').addEventListener('click', () => goTo(current + 1));
+  document.getElementById('pt-prev-mob').addEventListener('click', () => goTo(current - 1));
+  document.getElementById('pt-next-mob').addEventListener('click', () => goTo(current + 1));
 }
 
 function renderWhyChooseUs(data) {
