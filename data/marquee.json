@@ -1,14 +1,11 @@
 {
   "items": [
-    "SAP",
-    "Oracle ERP",
-    "Microsoft Dynamics 365",
-    "Oracle NetSuite",
     "Odoo",
-    "Sage",
     "Infor",
-    "Acumatica",
-    "ERPNext",
-    "Custom ERP Systems"
+    "Oracle",
+    "Laravel",
+    "Flutter",
+    "Shopify",
+    "Docker"
   ]
 }
