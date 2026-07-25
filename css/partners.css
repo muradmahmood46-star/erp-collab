@@ -173,28 +173,8 @@
 /* Remove old top line */
 .pt-card-inner::before { display: none; }
 
-/* Corner watermark */
-.pt-card-inner::after {
-  content: '';
-  position: absolute;
-  bottom: -40px; right: -40px;
-  width: 160px; height: 160px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(26,110,245,0.06) 0%, transparent 70%);
-  pointer-events: none;
-}
+/* Corner watermark removed */
 
-/* Corner accent borders */
-.pt-card-inner .pt-corner {
-  position: absolute;
-  width: 20px; height: 20px;
-  pointer-events: none;
-  z-index: 2;
-}
-.pt-corner-tl { top: 0;  left: 0;  border-top: 2px solid #1a6ef5; border-left: 2px solid #1a6ef5; border-radius: 24px 0 0 0; }
-.pt-corner-tr { top: 0;  right: 0; border-top: 2px solid #1a6ef5; border-right: 2px solid #1a6ef5; border-radius: 0 24px 0 0; }
-.pt-corner-bl { bottom: 0; left: 0;  border-bottom: 2px solid #1a6ef5; border-left: 2px solid #1a6ef5; border-radius: 0 0 0 24px; }
-.pt-corner-br { bottom: 0; right: 0; border-bottom: 2px solid #1a6ef5; border-right: 2px solid #1a6ef5; border-radius: 0 0 24px 0; }
 
 /* Mobile arrows row */
 .pt-mobile-arrows {

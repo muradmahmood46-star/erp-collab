@@ -361,10 +361,6 @@ function renderPartners(data) {
     card.className = 'pt-card reveal';
     card.innerHTML = `
       <div class="pt-card-inner">
-        <span class="pt-corner pt-corner-tl"></span>
-        <span class="pt-corner pt-corner-tr"></span>
-        <span class="pt-corner pt-corner-bl"></span>
-        <span class="pt-corner pt-corner-br"></span>
         <div class="pt-icon-col">
           ${p.logo
             ? `<div class="pt-logo-wrap"><img src="${p.logo}" alt="${p.name} logo" class="pt-logo" /></div>`
