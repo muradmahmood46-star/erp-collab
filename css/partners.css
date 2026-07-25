@@ -201,10 +201,7 @@
   object-fit: contain;
 }
 
-.pt-flag {
-  font-size: 1.8rem;
-  line-height: 1;
-}
+.pt-flag { font-size: 1.8rem; line-height: 1; }
 
 .pt-country {
   font-size: 0.72rem;
@@ -307,43 +304,34 @@
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .pt-arrow-prev { display: none; }
-  .pt-slider-wrap { gap: 12px; justify-content: flex-end; }
+  .pt-slider-wrap { gap: 12px; }
   .pt-card-inner {
-    flex-direction: row;
-    padding: 20px 16px;
-    gap: 16px;
-    align-items: center;
-    text-align: left;
-  }
-  .pt-icon-col {
     flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    flex-shrink: 0;
+    padding: 24px 20px;
+    gap: 16px;
+    text-align: center;
   }
-  .pt-logo-wrap { width: 70px; height: 50px; }
-  .pt-logo { max-width: 70px; max-height: 44px; }
-  .pt-flag { font-size: 1.2rem; }
-  .pt-country { font-size: 0.62rem; }
-  .pt-content h3 { font-size: 1.1rem; }
-  .pt-tagline { font-size: 0.82rem; margin-bottom: 8px; }
+  .pt-icon-col { flex-direction: row; justify-content: center; gap: 14px; }
+  .pt-logo-wrap { width: 80px; height: 56px; }
+  .pt-logo { max-width: 80px; max-height: 50px; }
   .pt-desc {
-    font-size: 0.78rem;
-    line-height: 1.6;
-    border-left: 2px solid rgba(26,110,245,0.2);
-    padding-left: 10px;
-    border-top: none;
-    padding-top: 0;
+    border-left: none;
+    padding-left: 0;
+    border-top: 2px solid rgba(26,110,245,0.2);
+    padding-top: 12px;
+    font-size: 0.82rem;
   }
-  .pt-badge { font-size: 0.62rem; padding: 3px 10px; margin-bottom: 8px; }
+  .pt-content h3 { font-size: 1.2rem; }
+  .pt-tagline { font-size: 0.85rem; margin-bottom: 8px; }
+  .pt-badge { font-size: 0.65rem; padding: 3px 10px; margin-bottom: 8px; }
   .pt-arrow { width: 38px; height: 38px; font-size: 0.85rem; }
 }
 @media (max-width: 480px) {
   .pt-arrow-prev { display: none; }
   .pt-slider-wrap { gap: 8px; }
-  .pt-card-inner { padding: 16px 12px; gap: 12px; }
-  .pt-logo-wrap { width: 60px; height: 42px; }
-  .pt-logo { max-width: 60px; max-height: 38px; }
-  .pt-content h3 { font-size: 1rem; }
+  .pt-card-inner { padding: 20px 14px; gap: 12px; }
+  .pt-logo-wrap { width: 70px; height: 48px; }
+  .pt-logo { max-width: 70px; max-height: 42px; }
+  .pt-content h3 { font-size: 1.05rem; }
   .pt-arrow { width: 34px; height: 34px; }
 }
