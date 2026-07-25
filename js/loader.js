@@ -390,7 +390,6 @@ function renderPartners(data) {
     dotsEl.querySelectorAll('.pt-dot').forEach((d, i) => d.classList.toggle('active', i === current));
   }
 
-  document.getElementById('pt-prev').addEventListener('click', () => goTo(current - 1));
   document.getElementById('pt-next').addEventListener('click', () => goTo(current + 1));
 }
 
