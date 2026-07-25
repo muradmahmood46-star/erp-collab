@@ -120,6 +120,37 @@
   min-width: 100%;
   box-sizing: border-box;
   padding: 4px;
+  position: relative;
+}
+
+/* Traveling snake border */
+.pt-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 0;
+  padding: 2px;
+  background: conic-gradient(
+    from var(--angle, 0deg),
+    transparent 0deg,
+    transparent 270deg,
+    #38bdf8 300deg,
+    #0ea5e9 330deg,
+    #38bdf8 360deg
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: ptSnake 3s linear infinite;
+  z-index: 3;
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes ptSnake {
+  to { --angle: 360deg; }
 }
 
 .pt-card-inner {
@@ -129,34 +160,18 @@
   padding: 36px 40px;
   position: relative;
   overflow: hidden;
-  box-shadow:
-    0 4px 24px rgba(26,110,245,0.07),
-    0 1px 0 rgba(26,110,245,0.06) inset;
-  transition: box-shadow 0.4s ease, border-color 0.4s ease;
+  box-shadow: 0 4px 24px rgba(26,110,245,0.07);
+  transition: box-shadow 0.4s ease;
   display: flex;
   gap: 40px;
   align-items: center;
 }
 .pt-card-inner:hover {
-  border-color: rgba(26,110,245,0.25);
-  box-shadow: 0 16px 56px rgba(26,110,245,0.12), 0 2px 0 rgba(26,110,245,0.08) inset;
+  box-shadow: 0 16px 56px rgba(26,110,245,0.12);
 }
 
-/* Top shimmer line — traveling sky blue */
-.pt-card-inner::before {
-  content: '';
-  position: absolute;
-  top: 0; left: -100%;
-  width: 60%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #38bdf8, #0ea5e9, transparent);
-  animation: ptLineScan 3s linear infinite;
-  z-index: 3;
-}
-@keyframes ptLineScan {
-  0%   { left: -60%; }
-  100% { left: 160%; }
-}
+/* Remove old top line */
+.pt-card-inner::before { display: none; }
 
 /* Corner watermark */
 .pt-card-inner::after {
