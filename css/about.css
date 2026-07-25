@@ -67,14 +67,19 @@
 }
 
 .about-highlight {
-  color: #1a6ef5;
-  font-weight: 600;
+  color: #6b7280;
+  font-weight: 500;
+  background: rgba(107,114,128,0.08);
+  padding: 1px 4px;
+  border-radius: 3px;
 }
 
 /* ── VMH Section wrapper ── */
 .vmh-section {
-  margin-top: 60px;
+  margin-top: 80px;
+  padding-top: 20px;
   position: relative;
+  clear: both;
 }
 
 .vmh-label {
@@ -85,6 +90,7 @@
   text-transform: uppercase;
   color: #6D28D9;
   margin-bottom: 12px;
+  display: block;
 }
 .vmh-title {
   text-align: center;
@@ -92,6 +98,7 @@
   font-weight: 800;
   color: var(--navy);
   margin-bottom: 8px;
+  line-height: 1.3;
 }
 .vmh-title span {
   background: linear-gradient(135deg, #1a6ef5, #6D28D9);
@@ -104,6 +111,10 @@
   color: var(--text-light);
   font-size: 0.88rem;
   margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ── Vision & Mission cards ── */
