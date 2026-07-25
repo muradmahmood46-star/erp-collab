@@ -64,14 +64,18 @@
   color: #374151;
   font-size: 0.9rem;
   line-height: 1.8;
+  opacity: 0;
+  transform: translateY(-18px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+.about-glass.visible .about-line {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about-highlight {
-  color: #6b7280;
-  font-weight: 500;
-  background: rgba(107,114,128,0.08);
-  padding: 1px 4px;
-  border-radius: 3px;
+  color: #1a6ef5;
+  font-weight: 600;
 }
 
 /* ── VMH Section wrapper ── */
