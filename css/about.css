@@ -32,74 +32,43 @@
 }
 .about-image:hover img { transform: scale(1.03); }
 
-/* Glass card — fully visible on right side */
+/* Simple readable card */
 .about-glass {
-  background: rgba(13, 27, 80, 0.6);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: #ffffff;
+  border: 1px solid rgba(26,110,245,0.12);
   border-radius: 20px;
-  padding: 24px 28px;
-  box-shadow: 0 8px 48px rgba(26,110,245,0.18), 0 2px 16px rgba(0,0,0,0.12);
-  position: relative;
-  overflow: hidden;
+  padding: 32px 36px;
+  box-shadow: 0 4px 24px rgba(26,110,245,0.08);
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
   box-sizing: border-box;
 }
-.about-glass::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(26,110,245,0.08) 0%, rgba(109,40,217,0.08) 100%);
-  pointer-events: none;
-  border-radius: var(--radius);
-}
 
 .about-text h2 {
-  color: #ffffff;
+  color: var(--navy);
   margin-bottom: 20px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 #about-intro {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  border-left: 3px solid rgba(255,255,255,0.4);
-  padding-left: 16px;
-  overflow: hidden;
+  gap: 14px;
+  border-left: 3px solid #1a6ef5;
+  padding-left: 18px;
 }
 
 .about-line {
   display: block;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: .82rem;
-  line-height: 1.75;
-  opacity: 0;
-  transform: translateY(-20px);
-  text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  color: #374151;
+  font-size: 0.9rem;
+  line-height: 1.8;
 }
-.about-glass.visible .about-line {
-  animation: lineDropIn .45s ease forwards;
-}
-@keyframes lineDropIn {
-  to { opacity: 1; transform: translateY(0); }
-}
-.about-para-2 { margin-top: 6px; }
 
 .about-highlight {
-  color: #93c5fd;
-  font-weight: 700;
-  background: rgba(255,255,255,0.1);
-  padding: 1px 5px;
-  border-radius: 4px;
-}
-.about-para-2 .about-highlight {
-  color: #c4b5fd;
-  background: rgba(255,255,255,0.1);
+  color: #1a6ef5;
+  font-weight: 600;
 }
 
 /* ── VMH Section wrapper ── */

@@ -22,11 +22,21 @@
 
     <!-- Slider wrapper -->
     <div class="pt-slider-wrap">
-      <div class="pt-slider" id="pt-slider">
-        <!-- cards injected by JS -->
-      </div>
-
+      <button class="pt-arrow pt-arrow-prev" id="pt-prev" aria-label="Previous">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="pt-slider" id="pt-slider"></div>
       <button class="pt-arrow pt-arrow-next" id="pt-next" aria-label="Next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Mobile arrows below card -->
+    <div class="pt-mobile-arrows">
+      <button class="pt-arrow" id="pt-prev-mob" aria-label="Previous">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="pt-arrow" id="pt-next-mob" aria-label="Next">
         <i class="fas fa-chevron-right"></i>
       </button>
     </div>

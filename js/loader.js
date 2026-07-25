@@ -111,7 +111,6 @@ function renderAbout(data) {
     sentences.forEach(sentence => {
       const line = document.createElement('span');
       line.className = `about-line about-para-${pi + 1}`;
-      line.style.animationDelay = `${0.1 + lineIndex * 0.22}s`;
       line.innerHTML = highlightKeywords(sentence.trim());
       introEl.appendChild(line);
       lineIndex++;
