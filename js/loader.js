@@ -97,7 +97,7 @@ function renderAbout(data) {
     keywords.forEach(kw => {
       html = html.replace(
         new RegExp(`(${kw})`, 'gi'),
-        '<mark class="about-highlight">$1</mark>'
+        '<span class="about-highlight">$1</span>'
       );
     });
     return html;
