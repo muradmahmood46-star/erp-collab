@@ -110,7 +110,7 @@
 .pt-card {
   min-width: 100%;
   box-sizing: border-box;
-  padding: 8px;
+  padding: 6px;
   position: relative;
 }
 
@@ -118,11 +118,11 @@
 .pt-card::before {
   content: '';
   position: absolute;
-  inset: 8px;
-  border-top: 3px solid rgba(56,189,248,0.25);
-  border-left: 3px solid rgba(56,189,248,0.25);
-  border-bottom: 3px solid #38bdf8;
-  border-right: 3px solid #38bdf8;
+  inset: 6px;
+  border-top: 2px solid rgba(56,189,248,0.25);
+  border-left: 2px solid rgba(56,189,248,0.25);
+  border-bottom: 2px solid #38bdf8;
+  border-right: 2px solid #38bdf8;
   pointer-events: none;
   z-index: 3;
 }
@@ -305,8 +305,8 @@
   .pt-mobile-arrows { display: flex; }
   .pt-slider-wrap { justify-content: center; gap: 0; }
   .pt-slider { max-width: 100%; width: 100%; }
-  .pt-card { min-width: 100%; padding: 10px; }
-  .pt-card::before { inset: 10px; }
+  .pt-card { min-width: 100%; padding: 6px; }
+  .pt-card::before { inset: 6px; }
   .pt-card-inner {
     flex-direction: column;
     padding: 24px 20px;
